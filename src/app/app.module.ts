@@ -4,16 +4,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavComponent } from './template/nav/nav.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { ScreenServiceComponent } from './components/screen-service/screen-service.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    SliderComponent,
+    ScreenServiceComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+   
 
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

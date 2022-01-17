@@ -1,0 +1,31 @@
+.img-fluid{
+    margin-right: 30px;
+    width: 200px;
+}
+.navbar-nav{
+    font-family: 'Roboto', sans-serif;
+}
+.ajust{
+    display: flex;
+    justify-content: flex-end;
+}
+#header{
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+.container-fluid .navbar-collapse{
+    width: auto;
+}
+.nav-link{
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: solid 4px transparent;
+    color: #000 !important;
+}
+.nav-link:hover{
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
+}
