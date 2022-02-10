@@ -1,19 +1,20 @@
-/* SLIDER */
+/* hero */
 .align-self-center .button-primay-outline{
     margin-left: 7px;
 }
 .align-self-center .button-primay{
     margin-left: 7px;
 }
-.slider h1{
+.hero h1{
     text-transform: uppercase;
     font-weight: 900;
 }
-.slider h4{
+.hero h4{
     text-transform: uppercase;
     font-size: 18px;
+    color: white;
 }
-/* SLIDER */
+/* hero */
 
 
 /* ABOUT */
@@ -23,3 +24,11 @@
 }
 
 /* ABOUT */
+
+.sec{
+    height: 50px;
+    width: 150px;
+}
+/* .hero{
+    display: flex;
+} */
