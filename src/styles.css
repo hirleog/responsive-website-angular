@@ -2,9 +2,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, sans-serif; 
-         background-color: #222d50;
+         /* background-color: #222d50;
          width: 100%;
-         height: 720px;   
+         height: 800px;    */
         }
        /* background-repeat: no-repeat;
        background-size: cover;
@@ -12,7 +12,8 @@ body { margin: 0; font-family: Roboto, sans-serif;
 :root{
     --primary: #b79c64;
     --primary-dark: #bd9952;
-    --secondary: #364F6B;
+    --secondary: black;
+    /* --secondary: #364F6B; */
     --lignt: #f0f0f0;
     --medium: #cacaca;
     --dark: #a2a2a2;
@@ -21,15 +22,15 @@ body { margin: 0; font-family: Roboto, sans-serif;
 
 /* RESPONSIVE */
 @media (max-width: 991.98px){
-    .navbar-collapse{
+    /* .navbar-collapse{
         width: 100%;
-    }
+    } */
 }
 @media (min-width: 992px){
-    .nav-link{
+    /* .nav-link{
         margin-left: 15px;
         margin-right: 15px;
-    }
+    } */
 }
 @media(max-width: 767.98px){
     a.destaqye .img-container{
@@ -75,7 +76,7 @@ body { margin: 0; font-family: Roboto, sans-serif;
     font-weight: 500;
 }
 .bloco{
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 .bloco2{
     margin-top: 140px;
@@ -88,16 +89,78 @@ a:hover{
     color: var(--secondary);
 }
 
-a.destaque{
+
+/* ==============CARDS DE SERVIÇOS====================== */
+a.destaque.a1{
+
     display: block;
+    background-image: url(assets/Prancheta1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+
+    /* display: block;
     background: var(--lignt);
     border-radius: 5px;
     text-align: center;
     padding: 20px;
     color: black;
     text-decoration: none;
+    transition: all ease-out 0.2s; */
+}
+a.destaque.a2{
+
+    display: block;
+    background-image: url(assets/Prancheta3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
     transition: all ease-out 0.2s;
 }
+a.destaque.a3{
+
+    display: block;
+    background-image: url(assets/Prancheta3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+a.destaque.a4{
+
+    display: block;
+    background-image: url(assets/Prancheta1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+/* ==============CARDS DE SERVIÇOS====================== */
 
 a.destaque:hover{
     background-color: #fff;
@@ -111,17 +174,17 @@ a.destaque:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 300px;
 }
 .servicos a.destaque .img-container img{
-    max-height: 160px;
+    max-height: 600px;
 }
 
 /* CUSTOM */
-/* .slider{
-    background: url(assets/detalhes-fundo-azul.png) no-repeat center  bottom;
+.sobre-details{
+    background: url(assets/details.png) no-repeat center  bottom;
     background-size: contain;
-} */
+}
 .active2{
     position: fixed;
     background: #fff;

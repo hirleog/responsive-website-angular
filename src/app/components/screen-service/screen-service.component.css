@@ -2,3 +2,89 @@
     text-transform: uppercase;
     font-weight: 900;
 }
+.servicos {
+    background-color: var(--medium);
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .align-contact-infos {
+    display: flex;
+    justify-content: center;
+    /* margin: 25px 0px 0px -12px; */
+  }
+  .align-contact-infos h3 {
+    margin: 0px;
+  }
+  .contact {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    margin: 55px 0px 0px 0px;
+    padding: 0px 0px 40px 0px;
+  }
+  .contact-align {
+    padding: 40px 0px 40px 0px;
+  }
+  #circulo {
+    background: lightblue;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+.cir-ajust {
+    height: 200px;
+    margin: 0px 0px 18px 14px;
+}
+
+.dr-rick h1{
+color: red;
+}
+.infos {
+    margin: 55px 0px 0px 0px;
+}
+.subtitle {
+    padding: 0px 0px 0px 0px;
+    margin: -7px -67px 0px 0px;
+}
+ 
+#ajust-layout {
+    display: flex;
+    justify-content: center;
+}
+.form-group1 {
+    display: flex;
+}
+
+.square {
+    width: 39em;
+    height: 273px;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.btn-send {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+}
+.btn-send-ajust {
+    padding-top: 19px;
+}
+.bottom-page {
+    background-color: black;
+    opacity: 80%;
+    width: 100%;
+    height:7em;
+    padding-top: 7px;
+}
+.align-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px 0px 0px;
+}
+.icons-redes a {
+    font-size: 30px;
+    margin-right: 15px;
+    
+}

@@ -54,6 +54,8 @@ html{
     width: 100% !important;
     background-color: transparent;
     transition: ease-out 0.2s;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
 }
 .header .navbar-collapse{
     width: auto;
