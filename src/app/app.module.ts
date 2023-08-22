@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './template/nav/nav.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ScreenServiceComponent } from './components/screen-service/screen-service.component';
+import { FooterComponent } from './template/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ScreenServiceComponent } from './components/screen-service/screen-servi
     NavComponent,
     SliderComponent,
     ScreenServiceComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

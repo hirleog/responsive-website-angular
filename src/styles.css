@@ -1,112 +1,141 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, sans-serif; 
-         /* background-color: #222d50;
-         width: 100%;
-         height: 800px;    */
-        }
-       /* background-repeat: no-repeat;
+html,
+body {
+  height: 100%;
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%); */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(60deg, #000000 2%, #5745fc 100%);
+}
+
+
+/* background-repeat: no-repeat;
        background-size: cover;
        background-position: right; }  */
-:root{
-    --primary: #b79c64;
-    --primary-dark: #bd9952;
-    --secondary: black;
-    /* --secondary: #364F6B; */
-    --lignt: #f0f0f0;
-    --medium: #cacaca;
-    --dark: #a2a2a2;
+:root {
+  --main-color: linear-gradient(183deg, rgba(0, 0, 0, 1) 0%, rgba(48, 38, 139, 1) 100%);
+  --main-color-variation: linear-gradient(29deg, rgba(0,0,0,1) 0%, rgba(48,38,139,1) 63%);
+
+  --primary: #b79c64;
+  --primary-dark: #bd9952;
+  /* --primary: #b79c64;
+  --primary-dark: #bd9952; */
+
+  --secondary: #0f0f0f;
+  --secondary-light: rgba(0, 0, 0, 0.815);
+  --light: #f0f0f0;
+  --medium: #cacacabd;
+  --dark: #a2a2a2;
 
 }
 
-/* RESPONSIVE */
-@media (max-width: 991.98px){
-    /* .navbar-collapse{
-        width: 100%;
-    } */
+/* RESPONSIVE nav bar*/
+
+@media (max-width: 767px) {}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    width: 100%;
+  }
 }
-@media (min-width: 992px){
-    /* .nav-link{
-        margin-left: 15px;
-        margin-right: 15px;
-    } */
+
+@media (min-width: 992px) {
+  .nav-link {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
-@media(max-width: 767.98px){
-    a.destaqye .img-container{
-        height: 120px;
-    }
-    a.destaqye .img-container img{
-        max-height: 120px;
-    }
+
+@media(max-width: 767.98px) {
+  a.destaqye .img-container {
+    height: 120px;
+  }
+
+  a.destaqye .img-container img {
+    max-height: 120px;
+  }
 }
 
 
 /* GLOBAL */
-.button{
-    text-transform: lowercase;
-    font-weight: 500;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
+.button {
+  text-transform: lowercase;
+  font-weight: 500;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
 }
-.button-primay{
-    background-color: var(--primary);
-    border-color: var(--primary);
+
+.button-primay {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
-.button-primay:hover{
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
+
+.button-primay:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
-.button-primay-outline{
-    border-color: var(--primary);
-    color: var(--primary);
+
+.button-primay-outline {
+  border-color: var(--primary);
+  color: var(--primary);
 }
-.button-primay-outline:hover{
-    border-color: var(--primary);
-    background-color: var(--primary-dark);
+
+.button-primay-outline:hover {
+  border-color: var(--primary);
+  background-color: var(--primary-dark);
 }
 
 
-.title{
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.subtitle{
-    color: var(--medium);
-    font-weight: 500;
-}
-.bloco{
-    margin-bottom: 90px;
-}
-.bloco2{
-    margin-top: 140px;
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-weight: bold;
+  color: var(--light);
 }
 
-a{
-    color: var(--primary);
+.subtitle {
+  color: var(--medium);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--medium);
 }
-a:hover{
-    color: var(--secondary);
+
+.bloco {
+  margin-bottom: 73px;
+}
+
+.bloco2 {
+  margin-top: 140px;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
 }
 
 
 /* ==============CARDS DE SERVIÇOS====================== */
-a.destaque.a1{
+a.destaque.a1 {
 
-    display: block;
-    background-image: url(assets/Prancheta1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+  display: block;
+  background-image: url(assets/Prancheta1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-    transition: all ease-out 0.2s;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
 
-    /* display: block;
+  /* display: block;
     background: var(--lignt);
     border-radius: 5px;
     text-align: center;
@@ -115,79 +144,86 @@ a.destaque.a1{
     text-decoration: none;
     transition: all ease-out 0.2s; */
 }
-a.destaque.a2{
 
-    display: block;
-    background-image: url(assets/Prancheta3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+a.destaque.a2 {
 
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-    transition: all ease-out 0.2s;
+  display: block;
+  background-image: url(assets/Prancheta3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
 }
-a.destaque.a3{
 
-    display: block;
-    background-image: url(assets/Prancheta3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+a.destaque.a3 {
 
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-    transition: all ease-out 0.2s;
+  display: block;
+  background-image: url(assets/Prancheta3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
 }
-a.destaque.a4{
 
-    display: block;
-    background-image: url(assets/Prancheta1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+a.destaque.a4 {
 
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-    transition: all ease-out 0.2s;
+  display: block;
+  background-image: url(assets/Prancheta1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
 }
+
 /* ==============CARDS DE SERVIÇOS====================== */
 
-a.destaque:hover{
-    background-color: #fff;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
-    transform: scale(1.05);
+a.destaque:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
 }
-.servicos p{
-    color: var(--dark)
+
+.servicos p {
+  color: var(--dark)
 }
-.servicos a.destaque .img-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
+
+.servicos a.destaque .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
 }
-.servicos a.destaque .img-container img{
-    max-height: 600px;
+
+.servicos a.destaque .img-container img {
+  max-height: 600px;
 }
 
 /* CUSTOM */
-.sobre-details{
+/* .sobre-details{
     background: url(assets/details.png) no-repeat center  bottom;
     background-size: contain;
-}
-.active2{
+} */
+/* .active2{
     position: fixed;
     background: #fff;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
     z-index: 9999;
-}
+} */

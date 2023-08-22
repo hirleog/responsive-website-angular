@@ -1,77 +1,65 @@
-/* .row{
-    margin: 0;
+/* INCIO DO NAVBAR */
+.nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: solid 4px transparent;
+  color: var(--light) !important;
 }
 
-.container{
-    padding: 70px 0;
+.nav-link:hover {
+  border-bottom: solid 4px var(--primary);
+  color: var(--main-color);
 }
 
-p, li{
-    color: red;
-    font-size: 14px;
+.navbar-expand-lg {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  background: var(--secondary);
+  opacity: 95%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
-/* barra de navegação */
-/* 
-header, .navbar{
-    background-color: blue;
-} */
-
-/* #navbar-container{
-    padding-top: 0;
-    padding-bottom: 0;
+.nav-item a {
+  display: flex;
+  justify-content: center;
 }
 
-#logo{
-    width: 50%;
-}
-.navbar-brand{
-    padding: 0;
-    color: white;
-}
-.navbar-brand:hover{
-    color: aqua;
+/* FIM DO NAVBAR */
+
+/* icones redes */
+.flex-icons {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#navbar-links a{
-    color: blueviolet;
+#ajustes {
+  display: flex;
+  justify-content: center;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding: 1rem .8rem;
-} */ 
-html{
-    scroll-behavior: smooth;
+.icons-redes a {
+  font-size: 25px;
+  margin-right: 15px;
 }
 
-.img-fluid{
-    width: 250px;
-}
-.navbar-nav{
-    font-family: 'Roboto', sans-serif;
-}
-.header{
-    width: 100% !important;
-    background-color: transparent;
-    transition: ease-out 0.2s;
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-}
-.header .navbar-collapse{
-    width: auto;
-}
-.header .nav-link{
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-bottom: solid 4px transparent;
-    color: #b79c64 !important;
-}
-.nav-link:hover{
-    border-bottom: solid 4px var(--secondary);
-    color: var(--secondary);
+#burger i {
+  display: none;
 }
 
+@media (max-width: 768px) {
+  .nav-item {
+    display: none;
+  }
+
+
+}

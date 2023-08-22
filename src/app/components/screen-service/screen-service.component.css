@@ -1,90 +1,144 @@
-.servicos h2{
-    text-transform: uppercase;
-    font-weight: 900;
-}
-.servicos {
-    background-color: var(--medium);
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  .align-contact-infos {
-    display: flex;
-    justify-content: center;
-    /* margin: 25px 0px 0px -12px; */
-  }
-  .align-contact-infos h3 {
-    margin: 0px;
-  }
-  .contact {
-    background-color: var(--secondary);
-    width: 100%;
-    height: 100%;
-    margin: 55px 0px 0px 0px;
-    padding: 0px 0px 40px 0px;
-  }
-  .contact-align {
-    padding: 40px 0px 40px 0px;
-  }
-  #circulo {
-    background: lightblue;
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-}
-.cir-ajust {
-    height: 200px;
-    margin: 0px 0px 18px 14px;
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  color: #f3f3f3;
+  font-weight: 400;
+  text-align: left;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.dr-rick h1{
-color: red;
+h1 {
+  font-family: "Josefin Sans", serif;
+  font-size: 2rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
-.infos {
-    margin: 55px 0px 0px 0px;
-}
-.subtitle {
-    padding: 0px 0px 0px 0px;
-    margin: -7px -67px 0px 0px;
-}
- 
-#ajust-layout {
-    display: flex;
-    justify-content: center;
-}
-.form-group1 {
-    display: flex;
+.split:hover h1 {
+  color: #161616;
 }
 
-.square {
-    width: 39em;
-    height: 273px;
-    border-radius: 4px;
-    background-color: red;
+p {
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  opacity: 0%;
+}
+.split:hover p {
+  color: #161616;
+  opacity: 100%;
 }
 
-.btn-send {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
+.container {
+  width: 100vw;
+  height: 68vh;
+  /* background: #161616; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.btn-send-ajust {
-    padding-top: 19px;
+/* .container:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("https://picsum.photos/960/?blur") 0 0 no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.3;
+} */
+
+.card {
+  width: 360px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+  position: relative;
+  transform-origin: center;
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin: 0 16px 0 0;
 }
-.bottom-page {
-    background-color: black;
-    opacity: 80%;
-    width: 100%;
-    height:7em;
-    padding-top: 7px;
+.card:last-child {
+  margin: 0;
 }
-.align-icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0px 0px 0px;
+.card:hover {
+  transform: scale(1.05);
 }
-.icons-redes a {
-    font-size: 30px;
-    margin-right: 15px;
-    
+.card .content {
+  padding: 40px 24px 48px 24px;
+  position: relative;
+}
+.card .content h1,
+.card .content p {
+  transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.card .content h1.copy,
+.card .content p.copy {
+  margin: 16px 0 0 0;
+}
+
+
+
+
+
+.card.split {
+  height: 480px;
+  background: rgba(22, 22, 22, 0.8);
+}
+.card.split:before {
+  content: "";
+  width: 100%;
+  height: 0;
+  background: var(--primary);
+  /* background: #f3f3f3; */
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom;
+  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card.split:hover:before {
+  height: 277px;
+}
+.card.split .image {
+  display: block;
+  position: relative;
+}
+.card.split .image img {
+  width: 100%;
+  height: auto;
+}
+.card.full {
+  height: 480px;
+  background: #161616;
+  overflow: hidden;
+}
+.card.full .content {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  padding: 0 24px;
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card.full:hover .content {
+  bottom: 56px;
+}
+.card.full .image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card.full .image img {
+  height: 480px;
+  width: auto;
+}
+.card.full .image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  position: absolute;
 }
