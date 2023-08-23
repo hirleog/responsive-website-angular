@@ -1,7 +1,7 @@
-
 .img-fluid {
   width: 30em;
 }
+
 
 /* [INICIO] MEDIA PRINCIPAL QUE REPRESENTA A MAIOR TELA; */
 
@@ -42,6 +42,7 @@ p {
 
 .square-hero-services {
   width: 100%;
+  height: auto;
   background: rgb(0, 0, 0);
   background: var(--secondary);
   /* -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
@@ -258,11 +259,7 @@ p {
   line-height: 100%;
   font-size: 50px;
 }
-.sub-title {
-  color: var(--primary);
-  line-height: 100%;
-  font-size: 35px;
-}
+
 .card {
   width: 360px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.32);

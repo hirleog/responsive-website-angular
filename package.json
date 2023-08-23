@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "express": "^4.17.2",
     "jquery": "^3.6.0",
     "rxjs": "~7.4.0",

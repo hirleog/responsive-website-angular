@@ -5,8 +5,9 @@ body {
   height: 100%;
   /* background: rgb(0, 0, 0);
   background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%); */
-  background: rgb(0, 0, 0);
-  background: linear-gradient(60deg, #000000 2%, #5745fc 100%);
+  /* background: rgb(0, 0, 0); */
+  /* background: linear-gradient(60deg, #000000 2%, #5745fc 100%); */
+
 }
 
 
@@ -116,6 +117,14 @@ a {
 
 a:hover {
   color: var(--secondary);
+}
+
+.sub-title {
+  color: var(--primary);
+  line-height: 100%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 
