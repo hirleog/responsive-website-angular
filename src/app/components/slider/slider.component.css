@@ -9,6 +9,9 @@
 
 
 /* hero */
+.hero-ajust {
+  padding: 8em 0px 0px 0px;
+}
 
 h5 {
   font-size: 16px;
@@ -35,6 +38,7 @@ p {
 .align-buttons {
   display: flex;
 }
+
 .align-buttons a {
   margin-left: 10px;
 
@@ -47,24 +51,51 @@ p {
   background: var(--secondary);
   /* -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(#000, rgba(0, 0, 0, 0)) */
-    /* border-style: solid; */
-    /* border-bottom: 0; */
+  /* border-style: solid; */
+  /* border-bottom: 0; */
 }
+
 .square-hero {
   width: 95%;
   background: rgb(0, 0, 0);
   background: var(--main-color);
   border-radius: 30px;
-  /* -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(#000, rgba(0, 0, 0, 0)) */
-    /* border-style: solid; */
-    /* border-bottom: 0; */
+  top: 0;
+  left: 0;
+  z-index: 4;
+  overflow: hidden;
+  background-color: transparent;
 }
+
+.square-hero::before {
+  content: '';
+  background-image: url("/assets/03.png");
+  background-size: cover;
+  height: 100%;
+  width: 38%;
+  position: absolute;
+  filter: blur(4px);
+  border-radius: 30px;
+  z-index: -1;
+
+}
+
+html {
+  --s: 150px; /* control the size */
+
+  background:
+    linear-gradient(135deg,#0000 18.75%,#5E412F 0 31.25%,#0000 0),
+    repeating-linear-gradient(45deg,#5E412F -6.25% 6.25%,#FCEBB6 0 18.75%);
+  background-size: var(--s) var(--s);
+}
+
+
 
 .ajust-square-hero {
   display: flex;
   justify-content: center;
 }
+
 .square-hero-services p {
   display: flex;
   justify-content: center;
@@ -109,6 +140,10 @@ p {
 
 #burger i {
   display: none;
+}
+
+.align-h1 {
+  padding: 3em;
 }
 
 /* EFEITOS */
@@ -213,6 +248,7 @@ div.footer {
 
 /* card template */
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
+
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -231,6 +267,7 @@ h1 {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+
 .split:hover h1 {
   color: #161616;
 }
@@ -240,6 +277,7 @@ p {
   line-height: 28px;
   letter-spacing: 0.5px;
 }
+
 .split:hover p {
   color: #161616;
 }
@@ -269,28 +307,35 @@ p {
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
   margin: 0 16px 0 0;
 }
+
 .card:last-child {
   margin: 0;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
+
 .card .content {
   padding: 40px 24px 48px 24px;
   position: relative;
 }
+
 .card .content h1,
 .card .content p {
   transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
 .card .content h1.copy,
 .card .content p.copy {
   margin: 16px 0 0 0;
 }
+
 .card.split {
   height: 480px;
   background: rgba(22, 22, 22, 0.8);
 }
+
 .card.split:before {
   content: "";
   width: 100%;
@@ -301,23 +346,28 @@ p {
   transform-origin: bottom;
   transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .card.split:hover:before {
   height: 277px;
 }
+
 .card.split .image {
   display: block;
   position: relative;
 }
+
 .card.split .image img {
   width: 100%;
   height: auto;
 }
+
 .card.full {
   height: 480px;
   width: 32em;
   background: #161616;
   overflow: hidden;
 }
+
 .card.full .content {
   position: absolute;
   z-index: 1;
@@ -325,19 +375,23 @@ p {
   padding: 0 24px;
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .card.full:hover .content {
   bottom: 56px;
 }
+
 .card.full .image {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .card.full .image img {
   height: 480px;
   width: auto;
 }
+
 .card.full .image:before {
   content: "";
   width: 100%;
@@ -350,6 +404,7 @@ p {
 
 /* CARD 2 template */
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
+
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -368,6 +423,7 @@ h1 {
   letter-spacing: 0.10px;
   text-transform: uppercase;
 }
+
 .split:hover h1 {
   color: #161616;
 }
@@ -377,6 +433,7 @@ p {
   line-height: 28px;
   letter-spacing: 0.5px;
 }
+
 .split:hover p {
   color: #161616;
 }
@@ -400,28 +457,35 @@ p {
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
   margin: 0 16px 0 0;
 }
+
 .card-main:last-child {
   margin: 0;
 }
+
 .card-main:hover {
   transform: scale(1.05);
 }
+
 .card-main .content {
   padding: 40px 24px 48px 24px;
   position: relative;
 }
+
 .card-main .content h1,
 .card-main .content p {
   transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
 .card-main .content h1.copy,
 .card-main .content p.copy {
   margin: 16px 0 0 0;
 }
+
 .card-main.split {
   height: 480px;
   background: rgba(22, 22, 22, 0.8);
 }
+
 .card-main.split:before {
   content: "";
   width: 100%;
@@ -432,17 +496,21 @@ p {
   transform-origin: bottom;
   transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .card-main.split:hover:before {
   height: 277px;
 }
+
 .card-main.split .image {
   display: block;
   position: relative;
 }
+
 .card-main.split .image img {
   width: 100%;
   height: auto;
 }
+
 .card-main.full {
   border-radius: 50%;
   width: 35em;
@@ -461,10 +529,12 @@ p {
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
   opacity: 20%;
 }
+
 .card-main.full:hover .content {
   opacity: 100%;
   bottom: 200px;
 }
+
 /* EFEITO DA FOTO DO INCIO */
 
 
@@ -474,10 +544,12 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .card-main.full .image img {
   height: 480px;
   width: auto;
 }
+
 .card-main.full .image:before {
   content: "";
   width: 100%;

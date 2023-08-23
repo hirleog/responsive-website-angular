@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
 figure.snip1390 {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
@@ -17,6 +18,7 @@ figure.snip1390 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 figure.snip1390 *,
 figure.snip1390 *:before,
 figure.snip1390 *:after {
@@ -25,24 +27,30 @@ figure.snip1390 *:after {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
+
 figure.snip1390 figcaption {
   width: 100%;
 }
+
 figure.snip1390 h2,
 figure.snip1390 h4,
 figure.snip1390 blockquote {
   margin: 0;
 }
+
 figure.snip1390 h2,
 figure.snip1390 h4 {
   font-weight: 300;
 }
+
 figure.snip1390 h2 {
   color: #ffffff;
 }
+
 figure.snip1390 h4 {
   color: #a6a6a6;
 }
+
 figure.snip1390 blockquote {
   font-size: 1em;
   padding: 45px 20px 40px 50px;
@@ -53,6 +61,7 @@ figure.snip1390 blockquote {
   text-align: left;
   position: relative;
 }
+
 figure.snip1390 blockquote:before {
   font-family: 'FontAwesome';
   content: "\201C";
@@ -63,6 +72,7 @@ figure.snip1390 blockquote:before {
   top: 0px;
   left: 20px;
 }
+
 figure.snip1390 .profile {
   width: 100px;
   border-radius: 50%;
@@ -71,6 +81,7 @@ figure.snip1390 .profile {
   margin-bottom: 10px;
   border: solid 5px #A6A57A;
 }
+
 /* EFEITOS */
 .fade-fx {
   display: block;
@@ -78,3 +89,113 @@ figure.snip1390 .profile {
   animation: fadeInRight;
   animation-duration: 2s;
 }
+
+/*
+.carrossel-v1 {
+  display: none;
+}
+.carrossel-v2 {
+  display: none;
+} */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .carrossel-v1 {
+    visibility: hidden;
+  }
+
+  .carrossel-v2 {
+    visibility: visible;
+  }
+
+  figure.snip1390 {
+    font-family: 'Roboto', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2C3447;
+    padding: 33px 0px 0px 0px;
+    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .carrossel-v1 {
+    visibility: hidden;
+  }
+
+  .carrossel-v2 {
+    visibility: visible;
+  }
+
+  figure.snip1390 {
+    font-family: 'Roboto', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2C3447;
+    padding: 33px 0px 0px 0px;
+    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .carrossel-v1 {
+    visibility: hidden;
+  }
+
+  .carrossel-v2 {
+    visibility: visible;
+  }
+
+  figure.snip1390 {
+    font-family: 'Roboto', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2C3447;
+    padding: 20px;
+    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .carrossel-v1 {
+    visibility: visible;
+  }
+
+  .carrossel-v2 {
+    visibility: hidden;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}

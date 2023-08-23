@@ -1,4 +1,7 @@
 /* INCIO DO NAVBAR */
+html {
+
+}
 .nav-link {
   font-weight: 500;
   text-transform: uppercase;
@@ -24,8 +27,9 @@
   opacity: 95%;
 
   position: fixed;
-  top: 0;
+  /* top: 0;
   left: 0;
+  bottom: 0; */
   z-index: 10;
 }
 
@@ -56,10 +60,19 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
   .nav-item {
     display: none;
   }
-
-
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
+
