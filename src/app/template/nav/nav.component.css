@@ -1,7 +1,6 @@
 /* INCIO DO NAVBAR */
-html {
+html {}
 
-}
 .nav-link {
   font-weight: 500;
   text-transform: uppercase;
@@ -33,6 +32,8 @@ html {
   z-index: 10;
 }
 
+
+
 .nav-item a {
   display: flex;
   justify-content: center;
@@ -48,7 +49,9 @@ html {
 
 #ajustes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
 }
 
 .icons-redes a {
@@ -58,21 +61,151 @@ html {
 
 #burger i {
   display: none;
+  color: var(--primary);
+  margin: 15px 10px 0px 0px;
+}
+
+.nav-item a {
+  display: block;
+  visibility: visible;
+}
+
+@media only screen and (min-width : 320px) {
+  .nav-item a {
+    display: none;
+  }
+
+  .side-item {
+    display: block;
+  }
+
+  #burger i {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .side-bar {
+    background: var(--secondary-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    opacity: 100%;
+    transition: all 0.5s ease;
+    z-index: 10;
+    margin-top: 75px;
+    /* display: none; */
+  }
+
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {}
+@media only screen and (min-width : 480px) {
+  .side-bar {
+    background: var(--secondary-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    opacity: 100%;
+    transition: all 0.5s ease;
+    z-index: 10;
+    margin-top: 75px;
+    /* display: none; */
+  }
+
+  .nav-item a {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .side-item {
+    display: block;
+  }
+
+  #burger i {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-expand-lg {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    background: #000;
+    background: var(--secondary);
+    opacity: 95%;
+
+    position: fixed;
+    /* top: 0;
+    left: 0;
+    bottom: 0; */
+    z-index: 10;
+  }
+}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .nav-item {
+  .side-bar {
+    background: var(--secondary-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    opacity: 100%;
+    transition: all 0.5s ease;
+    z-index: 10;
+    margin-top: 75px;
+    /* display: none; */
+  }
+
+  .nav-item a {
     display: none;
+  }
+
+  .side-item {
+    display: block;
   }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 992px) {
+  .side-bar {
+
+    display: none;
+  }
+
+  .nav-item a {
+    display: block;
+    visibility: visible;
+  }
+
+  #burger i {
+    display: none;
+  }
+}
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {}
+@media only screen and (min-width : 1200px) {
+  .side-bar {
 
+    display: none;
+  }
+
+  #burger i {
+    display: none;
+  }
+
+  .nav-item a {
+    display: block;
+    visibility: visible;
+  }
+}

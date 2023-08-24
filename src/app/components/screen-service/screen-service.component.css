@@ -215,8 +215,13 @@ p {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
-    width: 75%;
+    width: 60%;
     border-radius: 0.25rem;
+  }
+  .card.split {
+    height: 30em;
+    background: rgba(22, 22, 22, 0.8);
+    padding: 0px 0px;
   }
 
 }

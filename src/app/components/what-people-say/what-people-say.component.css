@@ -90,12 +90,17 @@ figure.snip1390 .profile {
   animation-duration: 2s;
 }
 
-/*
-.carrossel-v1 {
-  display: none;
+/* .snip1390 {
+  margin: 20px;
+  padding: 3px;
+  float: left;
+
 }
-.carrossel-v2 {
-  display: none;
+
+.snip1390:hover {
+  margin-top: 5px;
+  box-shadow: #000000;
+
 } */
 
 /* Custom, iPhone Retina */
@@ -106,9 +111,10 @@ figure.snip1390 .profile {
 
   .carrossel-v2 {
     visibility: visible;
+
   }
 
-  figure.snip1390 {
+  /* figure.snip1390 {
     font-family: 'Roboto', Arial, sans-serif;
     position: relative;
     overflow: hidden;
@@ -124,7 +130,7 @@ figure.snip1390 .profile {
     background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
+  } */
 
 }
 
@@ -138,7 +144,12 @@ figure.snip1390 .profile {
     visibility: visible;
   }
 
-  figure.snip1390 {
+  /* #cards-v2 {
+    display: flex;
+    justify-content: center;
+  } */
+
+  /* figure.snip1390 {
     font-family: 'Roboto', Arial, sans-serif;
     position: relative;
     overflow: hidden;
@@ -154,7 +165,7 @@ figure.snip1390 .profile {
     background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
+  } */
 }
 
 /* Small Devices, Tablets */
@@ -167,7 +178,7 @@ figure.snip1390 .profile {
     visibility: visible;
   }
 
-  figure.snip1390 {
+  /* figure.snip1390 {
     font-family: 'Roboto', Arial, sans-serif;
     position: relative;
     overflow: hidden;
@@ -183,7 +194,7 @@ figure.snip1390 .profile {
     background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
+  } */
 }
 
 /* Medium Devices, Desktops */

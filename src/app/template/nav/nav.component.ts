@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  public openClose: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public menu() {
+    this.openClose = !this.openClose;
+  }
 
 }
