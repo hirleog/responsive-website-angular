@@ -4,7 +4,7 @@
 
 /* hero */
 .hero-ajust {
-  padding: 6em 0px 0px 0px;
+  /* padding: 6em 0px 0px 0px; */
 }
 
 h5 {
@@ -27,12 +27,13 @@ p {
 
 .align-buttons {
   display: flex;
+  justify-content: center;
 }
 
-.align-buttons a {
+/* .align-buttons a {
   margin-left: 10px;
 
-}
+} */
 
 .square-hero-services {
   width: 100%;
@@ -42,12 +43,10 @@ p {
 }
 
 .square-hero {
-  width: 99%;
+  width: 100%;
   background: rgb(0, 0, 0);
   background: var(--main-color);
-  border-radius: 5px;
   top: 0;
-  left: 0;
   z-index: 4;
   overflow: hidden;
   background-color: transparent;
@@ -58,10 +57,10 @@ p {
   background-image: url("/assets/city.png");
   background-size: cover;
   height: 100%;
-  width: 65%;
+  width: 100%;
   position: absolute;
   filter: blur(4px);
-  border-radius: 30px;
+  /* border-radius: 30px; */
   z-index: -1;
   margin: -2em 0px 0px 0em;
 }
@@ -142,7 +141,7 @@ div.footer {
 
 
 /* card template */
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
+/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto"); */
 
 html {
   font-size: 62.5%;
@@ -161,6 +160,16 @@ h1 {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+h2 {
+  font-family: "Josefin Sans", serif;
+
+  color: var(--medium);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: oblique;
+
+
 }
 
 .split:hover h1 {
@@ -440,18 +449,38 @@ p {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+  .square-hero {
+    width: 100%;
+    height: 45em;
+    background: rgb(0, 0, 0);
+    background: var(--main-color);
+    top: 0;
+    z-index: 4;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  /* .square-hero::before {
+    content: '';
+    background-image: url(/assets/city.png);
+    background-size: cover;
+    height: 53%;
+    width: 102%;
+    position: absolute;
+    filter: blur(0px);
+    z-index: -1;
+    margin: 21em 0px 0px 0px;
+} */
   .square-hero::before {
     content: '';
-    background-image: url("/assets/city.png");
+    background-image: url(/assets/city.png);
     background-size: cover;
-    height: 40%;
-    width: 100%;
+    height: 53%;
+    width: 110%;
     position: absolute;
-    filter: blur(4px);
-    border-radius: 30px;
+    filter: blur(0px);
     z-index: -1;
-    margin: 12em 0px 0px -1em;
-  }
+    margin: 21em 0px 0px -21px;
+}
   .align-h1 h1 {
     font-size: 29px;
   }
@@ -471,11 +500,36 @@ p {
     justify-content: center;
     margin: -2em 11em 0px 0px;
   }
+
+  .align-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .title-card {
+    color: var(--primary);
+    line-height: 100%;
+    font-size: 50px;
+  }
+  .title-card2 {
+    color: var(--primary);
+    line-height: 100%;
+    font-size: 50px;
+    margin: 1.5em 0px 0px 10px;
+  }
+  .copy {
+    margin-bottom: 1em;
+    font-size: 27px;
+  }
+  #logo-escudo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13em;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  .square-hero::before {
+  /* .square-hero::before {
     content: '';
     background-image: url("/assets/city.png");
     background-size: cover;
@@ -486,7 +540,7 @@ p {
     border-radius: 30px;
     z-index: -1;
     margin: 12em 0px 0px -1em;
-  }
+  } */
 }
 
 /* Small Devices, Tablets */
@@ -500,7 +554,7 @@ p {
     overflow: hidden;
   }
 
-  .square-hero::before {
+  /* .square-hero::before {
     content: '';
     background-image: url("/assets/city.png");
     background-size: cover;
@@ -511,7 +565,7 @@ p {
     border-radius: 30px;
     z-index: -1;
     margin: 12em 0px 0px -1em;
-  }
+  } */
 }
 
 /* Medium Devices, Desktops */
@@ -521,31 +575,6 @@ p {
     justify-content: center;
   }
 
-  #burger i {
-    display: block;
-    color: var(--primary);
-    cursor: pointer;
-  }
-
-  .navbar-expand-lg {
-    width: 100%;
-    background-color: var(--secondary);
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #sobre h1 {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: large;
-  }
-
-  #sobre h4 {
-    text-transform: uppercase;
-    font-size: smaller;
-    font-style: italic;
-    color: var(--medium);
-  }
 
   .align-self-center a,
   .align-btns {
@@ -554,26 +583,32 @@ p {
 
   }
 
-  #sobre {
-    padding-top: 2em;
+  .square-hero {
+    width: 100%;
+    height: 45em;
+    background: rgb(0, 0, 0);
+    background: var(--main-color);
+    top: 0;
+    z-index: 4;
+    overflow: hidden;
+    background-color: transparent;
   }
-
   .square-hero::before {
     content: '';
     background-image: url("/assets/city.png");
     background-size: cover;
-    height: 100%;
-    width: 65%;
+    height: 68%;
+    width: 70%;
     position: absolute;
-    filter: blur(4px);
-    border-radius: 30px;
+    filter: blur(2px);
+    /* border-radius: 30px; */
     z-index: -1;
-    margin: -2em 0px 0px 0em;
+    /* margin: 7em 0px 0px 0em; */
   }
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+/* @media only screen and (min-width : 1200px) {
   .card-main.full {
     border-radius: 50%;
     width: 35em;
@@ -582,16 +617,23 @@ p {
     background: #161616;
     overflow: hidden;
   }
+  .square-hero {
+    width: 100%;
+    height: 45em;
+    background: rgb(0, 0, 0);
+    background: var(--main-color);
+    top: 0;
+    z-index: 4;
+    overflow: hidden;
+    background-color: transparent;
+  }
   .square-hero::before {
     content: '';
     background-image: url("/assets/city.png");
     background-size: cover;
-    height: 81%;
-    width: 65%;
+    height: 68%;
+    width: 70%;
     position: absolute;
     filter: blur(2px);
-    border-radius: 30px;
-    z-index: -1;
-    margin: 7em 0px 0px 0em;
-  }
-}
+    /* border-radius: 30px; */
+    /* margin: 7em 0px 0px 0em; */

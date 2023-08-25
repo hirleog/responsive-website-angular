@@ -82,6 +82,26 @@ figure.snip1390 .profile {
   border: solid 5px #A6A57A;
 }
 
+.img-wrapper {
+  max-width: 100%;
+  height: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-item {
+  margin: 0px 0px 0px 0px;
+}
+
 /* EFEITOS */
 .fade-fx {
   display: block;
@@ -89,19 +109,6 @@ figure.snip1390 .profile {
   animation: fadeInRight;
   animation-duration: 2s;
 }
-
-/* .snip1390 {
-  margin: 20px;
-  padding: 3px;
-  float: left;
-
-}
-
-.snip1390:hover {
-  margin-top: 5px;
-  box-shadow: #000000;
-
-} */
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -113,6 +120,7 @@ figure.snip1390 .profile {
     visibility: visible;
 
   }
+
 
   /* figure.snip1390 {
     font-family: 'Roboto', Arial, sans-serif;
@@ -135,7 +143,7 @@ figure.snip1390 .profile {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media screen and (min-width : 576px) {
   .carrossel-v1 {
     visibility: hidden;
   }
@@ -144,32 +152,16 @@ figure.snip1390 .profile {
     visibility: visible;
   }
 
-  /* #cards-v2 {
+  .carousel-inner {
     display: flex;
     justify-content: center;
-  } */
+  }
 
-  /* figure.snip1390 {
-    font-family: 'Roboto', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    font-size: 16px;
-    background-color: #2C3447;
-    padding: 33px 0px 0px 0px;
-    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  } */
+
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media screen and (min-width : 768px) {
   .carrossel-v1 {
     visibility: hidden;
   }
@@ -177,6 +169,17 @@ figure.snip1390 .profile {
   .carrossel-v2 {
     visibility: visible;
   }
+  /* .carousel-inner {
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-item {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    flex: 0 0 calc(100%/3);
+  } */
+
+
 
   /* figure.snip1390 {
     font-family: 'Roboto', Arial, sans-serif;
@@ -206,6 +209,22 @@ figure.snip1390 .profile {
   .carrossel-v2 {
     visibility: hidden;
   }
+  .carousel-inner {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+  }
+
+  .carousel-item {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    flex: 0 0 calc(100%/3);
+  }
+  .ajust-card-size {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 /* Large Devices, Wide Screens */

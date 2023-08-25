@@ -36,7 +36,19 @@ export class WhatPeopleSayComponent implements OnInit {
       },
       {
         img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
-        title: 'Eleanor Crisp',
+        title: 'daniel',
+        subtitle: 'UX Design',
+        content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
+      },
+      {
+        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+        title: 'daniel',
+        subtitle: 'UX Design',
+        content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
+      },
+      {
+        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg',
+        title: 'daniel',
         subtitle: 'UX Design',
         content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
       },
