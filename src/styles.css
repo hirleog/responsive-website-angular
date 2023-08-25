@@ -15,20 +15,15 @@
 
 
 
-html,
-body {
+html{
+  overflow-x: hidden;
+}
   /* height: 100%; */
   /* background: rgb(0, 0, 0);
   background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%); */
   /* background: rgb(0, 0, 0); */
   /* background: linear-gradient(60deg, #000000 2%, #5745fc 100%); */
 
-}
-
-
-/* background-repeat: no-repeat;
-       background-size: cover;
-       background-position: right; }  */
 :root {
   --main-color: linear-gradient(183deg, rgba(0, 0, 0, 1) 0%, rgba(48, 38, 139, 1) 100%);
   --main-color-variation: linear-gradient(29deg, rgba(0,0,0,1) 0%, rgba(48,38,139,1) 63%);
@@ -119,11 +114,11 @@ body {
 }
 
 .bloco {
-  margin-bottom: 73px;
+  margin-bottom: 45px;
 }
 
 .bloco2 {
-  margin-top: 73px;
+  margin-top: 55px;
 }
 
 a {

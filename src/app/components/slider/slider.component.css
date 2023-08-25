@@ -493,12 +493,17 @@ p {
     background: #161616;
     overflow: hidden;
   }
+  .card.full {
+    height: 27em;
+    width: 27em;
+    background: #161616;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
 
-  .image img {
+  .sobre-content {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: -2em 11em 0px 0px;
   }
 
   .align-buttons {
@@ -508,7 +513,7 @@ p {
   .title-card {
     color: var(--primary);
     line-height: 100%;
-    font-size: 50px;
+    font-size: 44px;
   }
   .title-card2 {
     color: var(--primary);
@@ -518,13 +523,35 @@ p {
   }
   .copy {
     margin-bottom: 1em;
-    font-size: 27px;
+    font-size: 19px;
+    font-weight: 500;
   }
   #logo-escudo {
     display: flex;
     justify-content: center;
     margin-bottom: 13em;
   }
+}
+
+@media only screen and (min-width : 556px) {
+  .square-hero::before {
+    content: '';
+    background-image: url(/assets/city.png);
+    background-size: cover;
+    height: 55%;
+    width: 113%;
+    position: absolute;
+    filter: blur(0px);
+    z-index: -1;
+    margin: 20em 0px 0px -43px;
+}
+.title-card2 {
+  margin: 2em 0px 0px 10px;
+}
+#logo-escudo {
+  margin-bottom: 17em;
+}
+
 }
 
 /* Extra Small Devices, Phones */
