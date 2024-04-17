@@ -1,6 +1,8 @@
 /* INCIO DO NAVBAR */
-html {}
-
+html body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .nav-link {
   font-weight: 500;
   text-transform: uppercase;
@@ -69,6 +71,9 @@ html {}
   display: block;
   visibility: visible;
 }
+.side-bar {
+  margin-top: 69px
+}
 
 @media only screen and (min-width : 320px) {
   .nav-item a {
@@ -96,7 +101,8 @@ html {}
     opacity: 100%;
     transition: all 0.5s ease;
     z-index: 10;
-    margin-top: 75px;
+
+    /* margin-top: 69px; */
     /* display: none; */
   }
 
@@ -115,7 +121,7 @@ html {}
     opacity: 100%;
     transition: all 0.5s ease;
     z-index: 10;
-    margin-top: 75px;
+    /* margin-top: 75px; */
     /* display: none; */
   }
 
@@ -138,7 +144,7 @@ html {}
     /* display: flex; */
     /* justify-content: space-around; */
     background: #000;
-    background: var(--secondary);
+    /* background: var(--secondary-transparent); */
     opacity: 95%;
 
     position: fixed;
@@ -163,7 +169,7 @@ html {}
     opacity: 100%;
     transition: all 0.5s ease;
     z-index: 10;
-    margin-top: 75px;
+    /* margin-top: 75px; */
     /* display: none; */
   }
 

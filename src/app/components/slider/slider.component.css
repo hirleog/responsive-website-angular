@@ -1,10 +1,17 @@
-.img-fluid {
-  width: 30em;
+/* card template */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
+
+html body {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-/* hero */
-.hero-ajust {
-  /* padding: 6em 0px 0px 0px; */
+h1,
+h2,
+p {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
 }
 
 h5 {
@@ -20,170 +27,37 @@ p {
   font-weight: 600;
 }
 
-.main-backgroung {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%);
-}
-
 .align-buttons {
   display: flex;
   justify-content: center;
 }
 
-/* .align-buttons a {
-  margin-left: 10px;
+#inicio {
+  position: relative;
+  width: 100%;
+  padding-top: 2em;
+}
 
-} */
+#banner img {
 
-.square-hero-services {
   width: 100%;
   height: auto;
-  background: rgb(0, 0, 0);
-  background: var(--secondary);
 }
 
-.square-hero {
-  width: 100%;
-  background: rgb(0, 0, 0);
-  background: var(--main-color);
-  top: 0;
-  z-index: 4;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-.square-hero::before {
-  content: '';
-  background-image: url("/assets/city.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+#inicio #logo {
   position: absolute;
-  filter: blur(4px);
-  /* border-radius: 30px; */
-  z-index: -1;
-  margin: -2em 0px 0px 0em;
-}
-
-.ajust-square-hero {
-  display: flex;
-  justify-content: center;
-}
-
-.square-hero-services p {
+  top: 0;
+  left: 0;
+  height: -webkit-fill-available;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.692);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primary);
 }
-
-
-/* [INICIO] SERVIÇOS */
-.service-content {
-  width: 100%;
-  height: auto;
-  /* background-color: rgba(0, 0, 0, 0.555); */
-  background-color: var(--secondary);
-}
-
-.servicos h2 {
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-#servicos h2 {
-  color: var(--primary);
-}
-
-/* [FIM] SERVICOS */
-
-.flex-icons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#ajustes {
-  display: flex;
-  justify-content: center;
-}
-
-.icons-redes a {
-  font-size: 25px;
-  margin-right: 15px;
-}
-
-#burger i {
-  display: none;
-}
-
-.align-h1 {
-  padding: 3em;
-}
-.align-h1 h1 {
-  font-size: 29px;
-}
-
-/* EFEITOS */
-.fade-fx {
-  display: block;
-
-  animation: fadeInRight;
-  animation-duration: 2s;
-}
-
-/* ===========FOOTER========= */
-div.footer {
-  background-color: var(--light);
-  width: 100%;
-  height: 200px;
-}
-
-
-
-/* card template */
-/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto"); */
-
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-  color: #f3f3f3;
-  font-weight: 400;
-  text-align: left;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1 {
-  font-family: "Josefin Sans", serif;
-  font-size: 2rem;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-h2 {
-  font-family: "Josefin Sans", serif;
-
-  color: var(--medium);
-  font-size: 16px;
-  font-weight: 400;
-  font-style: oblique;
-
-
-}
-
-.split:hover h1 {
-  color: #161616;
-}
-
-p {
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 0.5px;
-}
-
-.split:hover p {
-  color: #161616;
+#logo h2 {
+  color: var(--light);
+  font-size: xx-large;
 }
 
 .title-card {
@@ -191,6 +65,18 @@ p {
   line-height: 100%;
   font-size: 50px;
 }
+.title-card2 {
+  color: var(--primary);
+  line-height: 100%;
+  font-size: 50px;
+  margin: 2.5em 0px 0px 10px;
+}
+#logo-escudo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13em;
+}
+
 
 .card {
   width: 360px;
@@ -225,35 +111,6 @@ p {
   margin: 16px 0 0 0;
 }
 
-.card.split {
-  height: 480px;
-  background: rgba(22, 22, 22, 0.8);
-}
-
-.card.split:before {
-  content: "";
-  width: 100%;
-  height: 0;
-  background: #f3f3f3;
-  position: absolute;
-  bottom: 0;
-  transform-origin: bottom;
-  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.card.split:hover:before {
-  height: 277px;
-}
-
-.card.split .image {
-  display: block;
-  position: relative;
-}
-
-.card.split .image img {
-  width: 100%;
-  height: auto;
-}
 
 .card.full {
   height: 480px;
@@ -295,21 +152,6 @@ p {
 }
 
 
-
-/* CARD 2 template */
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
-
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-  color: #f3f3f3;
-  font-weight: 400;
-  text-align: left;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 h1 {
   font-family: "Josefin Sans", serif;
   font-size: 2rem;
@@ -318,9 +160,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.split:hover h1 {
-  color: #161616;
-}
+
 
 p {
   font-size: 2rem;
@@ -328,119 +168,71 @@ p {
   letter-spacing: 0.5px;
 }
 
-.split:hover p {
-  color: #161616;
+
+
+
+
+
+.about-ajust {
+  display: flex;
+  /* flex-flow: column; */
 }
 
-.card-main {
-  width: 360px;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.32);
-  cursor: pointer;
-  position: relative;
-  transform-origin: center;
-  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  margin: 0 16px 0 0;
+
+@media (max-width : 500px) {
+
+  /* tamanho de smartphones */
+
+  #inicio {
+    position: relative;
+    width: 100%;
+    padding-top: 4em;
+  }
+
+  #inicio #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: -webkit-fill-available;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    display: block;
+  }
+
+  #banner img {
+
+    width: 100%;
+    /* faz a imagem esticar para ocupar todo o contêiner */
+    height: auto;
+    /* mantém a proporção da imagem */
+    filter: blur(2px);
+  }
+
+
+
+
+
+  .title-card2 {
+    margin: 2em 0px 0px 10px;
+  }
+
+
+
+  .copy {
+    margin-bottom: 1em;
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  #logo-escudo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13em;
+  }
+
+
 }
 
-.card-main:last-child {
-  margin: 0;
-}
-
-.card-main:hover {
-  transform: scale(1.05);
-}
-
-.card-main .content {
-  padding: 40px 24px 48px 24px;
-  position: relative;
-}
-
-.card-main .content h1,
-.card-main .content p {
-  transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-.card-main .content h1.copy,
-.card-main .content p.copy {
-  margin: 16px 0 0 0;
-}
-
-.card-main.split {
-  height: 480px;
-  background: rgba(22, 22, 22, 0.8);
-}
-
-.card-main.split:before {
-  content: "";
-  width: 100%;
-  height: 0;
-  background: #f3f3f3;
-  position: absolute;
-  bottom: 0;
-  transform-origin: bottom;
-  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.card-main.split:hover:before {
-  height: 277px;
-}
-
-.card-main.split .image {
-  display: block;
-  position: relative;
-}
-
-.card-main.split .image img {
-  width: 100%;
-  height: auto;
-}
-
-.card-main.full {
-  border-radius: 50%;
-  width: 35em;
-  height: 35em;
-
-  background: #161616;
-  overflow: hidden;
-}
-
-/* EFEITO DA FOTO DO INCIO */
-.card-main.full .content {
-  position: absolute;
-  z-index: 1;
-  bottom: 40px;
-  padding: 0 24px;
-  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  opacity: 20%;
-}
-
-.card-main.full:hover .content {
-  opacity: 100%;
-  bottom: 200px;
-}
-
-/* EFEITO DA FOTO DO INCIO */
-
-
-.card-main.full .image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.card-main.full .image img {
-  height: 480px;
-  width: auto;
-}
-
-.card-main.full .image:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-  position: absolute;
-}
 
 
 
@@ -448,219 +240,39 @@ p {
 
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-  .square-hero {
-    width: 100%;
-    height: 45em;
-    background: rgb(0, 0, 0);
-    background: var(--main-color);
-    top: 0;
-    z-index: 4;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  /* .square-hero::before {
-    content: '';
-    background-image: url(/assets/city.png);
-    background-size: cover;
-    height: 53%;
-    width: 102%;
-    position: absolute;
-    filter: blur(0px);
-    z-index: -1;
-    margin: 21em 0px 0px 0px;
-} */
-  .square-hero::before {
-    content: '';
-    background-image: url(/assets/city.png);
-    background-size: cover;
-    height: 53%;
-    width: 110%;
-    position: absolute;
-    filter: blur(0px);
-    z-index: -1;
-    margin: 21em 0px 0px -21px;
-}
+@media (min-width : 768px) {
+
+
   .align-h1 h1 {
     font-size: 29px;
   }
 
-  .card-main.full {
-    border-radius: 50%;
-    width: 15em;
-    height: 15em;
-
-    background: #161616;
-    overflow: hidden;
-  }
-  .card.full {
-    height: 27em;
-    width: 27em;
-    background: #161616;
-    overflow: hidden;
-    margin-bottom: 2em;
-  }
-
-  .sobre-content {
-    display: flex;
-    justify-content: center;
-  }
 
   .align-buttons {
     display: flex;
     justify-content: center;
   }
+
   .title-card {
     color: var(--primary);
     line-height: 100%;
     font-size: 44px;
   }
-  .title-card2 {
-    color: var(--primary);
-    line-height: 100%;
-    font-size: 50px;
-    margin: 1.5em 0px 0px 10px;
-  }
+
+
+
   .copy {
     margin-bottom: 1em;
     font-size: 19px;
     font-weight: 500;
   }
-  #logo-escudo {
+
+
+
+  .about-ajust {
     display: flex;
-    justify-content: center;
-    margin-bottom: 13em;
-  }
-}
-
-@media only screen and (min-width : 556px) {
-  .square-hero::before {
-    content: '';
-    background-image: url(/assets/city.png);
-    background-size: cover;
-    height: 55%;
-    width: 113%;
-    position: absolute;
-    filter: blur(0px);
-    z-index: -1;
-    margin: 20em 0px 0px -43px;
-}
-.title-card2 {
-  margin: 2em 0px 0px 10px;
-}
-#logo-escudo {
-  margin-bottom: 17em;
-}
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-  /* .square-hero::before {
-    content: '';
-    background-image: url("/assets/city.png");
-    background-size: cover;
-    height: 40%;
-    width: 100%;
-    position: absolute;
-    filter: blur(4px);
-    border-radius: 30px;
-    z-index: -1;
-    margin: 12em 0px 0px -1em;
-  } */
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-  .card-main.full {
-    border-radius: 50%;
-    width: 35em;
-    height: 35em;
-
-    background: #161616;
-    overflow: hidden;
-  }
-
-  /* .square-hero::before {
-    content: '';
-    background-image: url("/assets/city.png");
-    background-size: cover;
-    height: 40%;
-    width: 100%;
-    position: absolute;
-    filter: blur(4px);
-    border-radius: 30px;
-    z-index: -1;
-    margin: 12em 0px 0px -1em;
-  } */
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-  .nav-item a {
-    display: none;
-    justify-content: center;
-  }
-
-
-  .align-self-center a,
-  .align-btns {
-    display: flex;
-    width: fit-content;
+    justify-content: space-around;
 
   }
 
-  .square-hero {
-    width: 100%;
-    height: 45em;
-    background: rgb(0, 0, 0);
-    background: var(--main-color);
-    top: 0;
-    z-index: 4;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  .square-hero::before {
-    content: '';
-    background-image: url("/assets/city.png");
-    background-size: cover;
-    height: 68%;
-    width: 70%;
-    position: absolute;
-    filter: blur(2px);
-    /* border-radius: 30px; */
-    z-index: -1;
-    /* margin: 7em 0px 0px 0em; */
-  }
 }
-
-/* Large Devices, Wide Screens */
-/* @media only screen and (min-width : 1200px) {
-  .card-main.full {
-    border-radius: 50%;
-    width: 35em;
-    height: 35em;
-
-    background: #161616;
-    overflow: hidden;
-  }
-  .square-hero {
-    width: 100%;
-    height: 45em;
-    background: rgb(0, 0, 0);
-    background: var(--main-color);
-    top: 0;
-    z-index: 4;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  .square-hero::before {
-    content: '';
-    background-image: url("/assets/city.png");
-    background-size: cover;
-    height: 68%;
-    width: 70%;
-    position: absolute;
-    filter: blur(2px);
-    /* border-radius: 30px; */
-    /* margin: 7em 0px 0px 0em; */

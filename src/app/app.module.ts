@@ -10,6 +10,8 @@ import { SliderComponent } from './components/slider/slider.component';
 import { ScreenServiceComponent } from './components/screen-service/screen-service.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { WhatPeopleSayComponent } from './components/what-people-say/what-people-say.component';
+// import { ButtonModule } from 'primeng/button';
+// import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,8 @@ import { WhatPeopleSayComponent } from './components/what-people-say/what-people
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-   
-
+    // ButtonModule,
+    // CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

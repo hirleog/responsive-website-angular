@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatPeopleSayComponent implements OnInit {
 
+  public dataDuration!: string;
+  public dataAos!: string;
+  public active: boolean = false;
+  active2!: string;
+  effect!: { data: string; duration: string; };
+  responsiveOptions: any = []
+
   constructor() { }
 
   public cardA: Array<any> = [];
@@ -14,6 +21,24 @@ export class WhatPeopleSayComponent implements OnInit {
   public cardC: Array<any> = [];
 
   ngOnInit(): void {
+
+    this.responsiveOptions = [
+      {
+          breakpoint: '1199px',
+          numVisible: 1,
+          numScroll: 1
+      },
+      {
+          breakpoint: '991px',
+          numVisible: 2,
+          numScroll: 1
+      },
+      {
+          breakpoint: '767px',
+          numVisible: 1,
+          numScroll: 1
+      }
+  ];
 
     this.cardA = [
       {
@@ -34,24 +59,6 @@ export class WhatPeopleSayComponent implements OnInit {
         subtitle: 'UX Design',
         content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
       },
-      {
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
-        title: 'daniel',
-        subtitle: 'UX Design',
-        content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
-      },
-      {
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
-        title: 'daniel',
-        subtitle: 'UX Design',
-        content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
-      },
-      {
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg',
-        title: 'daniel',
-        subtitle: 'UX Design',
-        content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
-      },
     ]
 
     this.cardB = [
@@ -64,12 +71,6 @@ export class WhatPeopleSayComponent implements OnInit {
       {
         img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg',
         title: 'daniel',
-        subtitle: 'UX Design',
-        content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
-      },
-      {
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg',
-        title: 'Eleanor Crisp',
         subtitle: 'UX Design',
         content: 'Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!',
       },
@@ -103,5 +104,21 @@ export class WhatPeopleSayComponent implements OnInit {
     ]
 
   }
+
+  public cardAnimation(): any {
+    // data-aos="fade-down" data-aos-duration="2000"
+    if (this.active = true) {
+      this.effect = {
+        data: 'fade-down',
+        duration: '2000'
+      }
+
+    }
+    console.log(this.active)
+    // this.active2 = "background-color: red;"
+
+  }
+
+
 
 }

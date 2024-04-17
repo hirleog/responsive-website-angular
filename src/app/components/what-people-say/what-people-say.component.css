@@ -103,11 +103,13 @@ img {
 }
 
 /* EFEITOS */
-.fade-fx {
-  display: block;
+.active2 {
+  background-color: red;
+
+  /* display: block;
 
   animation: fadeInRight;
-  animation-duration: 2s;
+  animation-duration: 2s; */
 }
 
 /* Custom, iPhone Retina */
