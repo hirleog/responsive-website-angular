@@ -144,7 +144,7 @@ html body {
     /* display: flex; */
     /* justify-content: space-around; */
     background: #000;
-    /* background: var(--secondary-transparent); */
+    background: var(--secondary);
     opacity: 95%;
 
     position: fixed;

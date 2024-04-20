@@ -6,9 +6,7 @@ html body {
   max-width: 100%;
 }
 
-h1,
-h2,
-p {
+h2 {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
@@ -21,11 +19,7 @@ h5 {
   color: var(--primary-dark);
 }
 
-p {
-  color: var(--medium);
-  font-size: 16px;
-  font-weight: 600;
-}
+
 
 .align-buttons {
   display: flex;
@@ -54,7 +48,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin: -9em 0em -7em 0em; */
 }
+
+
 #logo h2 {
   color: var(--light);
   font-size: xx-large;
@@ -65,16 +62,13 @@ p {
   line-height: 100%;
   font-size: 50px;
 }
-.title-card2 {
-  color: var(--primary);
-  line-height: 100%;
-  font-size: 50px;
-  margin: 2.5em 0px 0px 10px;
-}
+
+
+
 #logo-escudo {
   display: flex;
   justify-content: center;
-  margin-bottom: 13em;
+  margin-bottom: 7em;
 }
 
 
@@ -152,13 +146,6 @@ p {
 }
 
 
-h1 {
-  font-family: "Josefin Sans", serif;
-  font-size: 2rem;
-  line-height: 24px;
-  letter-spacing: 0.10px;
-  text-transform: uppercase;
-}
 
 
 
@@ -168,6 +155,26 @@ p {
   letter-spacing: 0.5px;
 }
 
+.service-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-list p {
+  font-size: large;
+}
+
+.service-list div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.service-list i {
+  font-size: 25px;
+  margin-right: 15px;
+  color: var(--primary-dark);
+}
 
 
 
@@ -186,17 +193,19 @@ p {
   #inicio {
     position: relative;
     width: 100%;
-    padding-top: 4em;
+    padding-top: 11em;
   }
 
   #inicio #logo {
     position: absolute;
     top: 0;
     left: 0;
-    height: -webkit-fill-available;
+    left: 0;
+    height: 45.1em;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.692);
     display: block;
+
   }
 
   #banner img {
@@ -204,8 +213,10 @@ p {
     width: 100%;
     /* faz a imagem esticar para ocupar todo o contêiner */
     height: auto;
-    /* mantém a proporção da imagem */
-    filter: blur(2px);
+    transform: scale(2.0);
+    /* Ajuste o fator de ampliação conforme necessário */
+    /* transition: transform 0.5s ease; */
+
   }
 
 
@@ -227,11 +238,14 @@ p {
   #logo-escudo {
     display: flex;
     justify-content: center;
-    margin-bottom: 13em;
+    margin-bottom: 7em;
   }
-
-
 }
+
+/* #sobre {
+  padding-top: 7em;
+  padding-bottom: 1em;
+} */
 
 
 

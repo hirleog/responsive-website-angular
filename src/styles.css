@@ -17,7 +17,7 @@
 @import "primeng/resources/primeng.css";
 
 
-html body{
+html body {
   overflow-x: hidden;
   max-width: 100%;
   background: rgb(0, 0, 0);
@@ -27,7 +27,7 @@ html body{
 
 :root {
   --main-color: linear-gradient(183deg, rgba(0, 0, 0, 1) 0%, rgba(48, 38, 139, 1) 100%);
-  --main-color-variation: linear-gradient(29deg, rgba(0,0,0,1) 0%, rgba(48,38,139,1) 63%);
+  --main-color-variation: linear-gradient(29deg, rgba(0, 0, 0, 1) 0%, rgba(48, 38, 139, 1) 63%);
 
   --primary: #b79c64;
   --primary-dark: #bd9952;
@@ -42,6 +42,30 @@ html body{
   --dark: #a2a2a2;
 
 }
+
+h1 {
+  font-family: "Josefin Sans", serif;
+  font-size: 50px;
+  line-height: 1.0em;
+  letter-spacing: 0.10px;
+  text-transform: uppercase;
+
+  color: var(--primary);
+  margin: 2.5em 0px 0px 10px;
+  pointer-events: none;
+  cursor: default;
+}
+
+p {
+  color: var(--medium);
+  font-size: 16px;
+  font-weight: 600;
+
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
 
 /* RESPONSIVE nav bar*/
 
