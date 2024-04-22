@@ -52,7 +52,7 @@ figure.snip1390 h4 {
 }
 
 figure.snip1390 blockquote {
-  font-size: 1em;
+  font-size: smaller;
   padding: 45px 20px 40px 50px;
   margin-top: 30px;
   background-color: #ffffff;
@@ -74,7 +74,7 @@ figure.snip1390 blockquote:before {
 }
 
 figure.snip1390 .profile {
-  width: 100px;
+  width: 65px;
   border-radius: 50%;
   display: inline-block;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
@@ -89,119 +89,58 @@ figure.snip1390 .profile {
   justify-content: center;
   align-items: flex-start;
 }
+
 img {
   max-width: 100%;
   max-height: 100%;
-}
-
-.carousel-inner {
-  padding: 1em;
 }
 
 .carousel-item {
   margin: 0px 0px 0px 0px;
 }
 
-/* EFEITOS */
-.active2 {
-  background-color: red;
-
-  /* display: block;
-
-  animation: fadeInRight;
-  animation-duration: 2s; */
+.ajust-card-size {
+  display: flex;
+  justify-content: center;
 }
+
+.carrossel-v1 {
+  display: none;
+}
+
+.carrossel-v2 {
+  display: block;
+
+}
+
+
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media (max-width : 500px) {
   .carrossel-v1 {
-    visibility: hidden;
+    display: block;
   }
 
   .carrossel-v2 {
-    visibility: visible;
-
-  }
-
-
-  /* figure.snip1390 {
-    font-family: 'Roboto', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    font-size: 16px;
-    background-color: #2C3447;
-    padding: 33px 0px 0px 0px;
-    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  } */
-
-}
-
-/* Extra Small Devices, Phones */
-@media screen and (min-width : 576px) {
-  .carrossel-v1 {
-    visibility: hidden;
-  }
-
-  .carrossel-v2 {
-    visibility: visible;
-  }
-
-  .carousel-inner {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 }
+
 
 /* Small Devices, Tablets */
-@media screen and (min-width : 768px) {
+@media (max-width : 996px) {
   .carrossel-v1 {
-    visibility: hidden;
+    display: block;
   }
 
   .carrossel-v2 {
-    visibility: visible;
+    display: none;
   }
-  /* .carousel-inner {
-    display: flex;
-    justify-content: center;
-  }
-  .carousel-item {
-    display: block;
-    margin: 0px 0px 0px 0px;
-    flex: 0 0 calc(100%/3);
-  } */
 
-
-
-  /* figure.snip1390 {
-    font-family: 'Roboto', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    font-size: 16px;
-    background-color: #2C3447;
-    padding: 20px;
-    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  } */
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+/* @media only screen and (min-width : 992px) {
   .carrossel-v1 {
     visibility: visible;
   }
@@ -225,7 +164,4 @@ img {
     justify-content: center;
   }
 
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {}
+} */

@@ -51,9 +51,13 @@ h1 {
   text-transform: uppercase;
 
   color: var(--primary);
-  margin: 2.5em 0px 0px 10px;
+  margin: 2em 0px 0px 10px;
   pointer-events: none;
   cursor: default;
+
+  padding-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -164,112 +168,3 @@ a:hover {
 }
 
 
-
-/* ==============CARDS DE SERVIÇOS====================== */
-a.destaque.a1 {
-
-  display: block;
-  background-image: url(assets/Prancheta1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-
-  border-radius: 5px;
-  text-align: center;
-  padding: 15px;
-  color: black;
-  text-decoration: none;
-  transition: all ease-out 0.2s;
-
-  /* display: block;
-    background: var(--lignt);
-    border-radius: 5px;
-    text-align: center;
-    padding: 20px;
-    color: black;
-    text-decoration: none;
-    transition: all ease-out 0.2s; */
-}
-
-a.destaque.a2 {
-
-  display: block;
-  background-image: url(assets/Prancheta3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-
-  border-radius: 5px;
-  text-align: center;
-  padding: 15px;
-  color: black;
-  text-decoration: none;
-  transition: all ease-out 0.2s;
-}
-
-a.destaque.a3 {
-
-  display: block;
-  background-image: url(assets/Prancheta3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-
-  border-radius: 5px;
-  text-align: center;
-  padding: 15px;
-  color: black;
-  text-decoration: none;
-  transition: all ease-out 0.2s;
-}
-
-a.destaque.a4 {
-
-  display: block;
-  background-image: url(assets/Prancheta1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-
-  border-radius: 5px;
-  text-align: center;
-  padding: 15px;
-  color: black;
-  text-decoration: none;
-  transition: all ease-out 0.2s;
-}
-
-/* ==============CARDS DE SERVIÇOS====================== */
-
-a.destaque:hover {
-  background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
-  transform: scale(1.05);
-}
-
-.servicos p {
-  color: var(--dark)
-}
-
-.servicos a.destaque .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-}
-
-.servicos a.destaque .img-container img {
-  max-height: 600px;
-}
-
-/* CUSTOM */
-/* .sobre-details{
-    background: url(assets/details.png) no-repeat center  bottom;
-    background-size: contain;
-} */
-/* .active2{
-    position: fixed;
-    background: #fff;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-} */

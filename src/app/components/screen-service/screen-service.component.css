@@ -15,13 +15,7 @@
   display: flex;
   justify-content: center;
 }
-.align-h1, .align-h1 h1{
-  padding-bottom: 1.5em;
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
 
-}
 
 .service-list {
   display: flex;
@@ -30,7 +24,7 @@
 }
 
 .service-list p {
-  font-size: large;
+  font-size: small;
   color: white;
 }
 
@@ -44,3 +38,4 @@
   margin-right: 15px;
   color: var(--primary-dark);
 }
+

@@ -42,33 +42,35 @@ h5 {
   position: absolute;
   top: 0;
   left: 0;
-  height: -webkit-fill-available;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.692);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: -9em 0em -7em 0em; */
+  margin: 8em 0em 0em 0em;
 }
-
 
 #logo h2 {
   color: var(--light);
   font-size: xx-large;
+  margin-top: -2em;
+
 }
+
+#logo h1 {
+  margin-bottom: -1em;
+
+}
+#logo-escudo {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0em 7em;
+}
+
 
 .title-card {
   color: var(--primary);
   line-height: 100%;
   font-size: 50px;
-}
-
-
-
-#logo-escudo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 7em;
 }
 
 
@@ -102,7 +104,7 @@ h5 {
 
 .card .content h1.copy,
 .card .content p.copy {
-  margin: 16px 0 0 0;
+  margin: 2em 0 0 0;
 }
 
 
@@ -193,33 +195,31 @@ p {
   #inicio {
     position: relative;
     width: 100%;
-    padding-top: 11em;
+    padding: 11em 0px 10em;
   }
 
-  #inicio #logo {
+  /* #inicio #logo {
     position: absolute;
     top: 0;
     left: 0;
     left: 0;
-    height: 45.1em;
+    height: -webkit-fill-available;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.692);
     display: block;
 
-  }
+  } */
 
   #banner img {
 
     width: 100%;
-    /* faz a imagem esticar para ocupar todo o contêiner */
     height: auto;
     transform: scale(2.0);
-    /* Ajuste o fator de ampliação conforme necessário */
-    /* transition: transform 0.5s ease; */
-
   }
 
-
+  .service-list p {
+    font-size: small;
+  }
 
 
 
@@ -240,6 +240,10 @@ p {
     justify-content: center;
     margin-bottom: 7em;
   }
+
+  #logo h1 {
+    margin-bottom: -1em;
+  }
 }
 
 /* #sobre {
@@ -254,7 +258,7 @@ p {
 
 
 /* Custom, iPhone Retina */
-@media (min-width : 768px) {
+@media (max-width : 768px) {
 
 
   .align-h1 h1 {
@@ -281,12 +285,26 @@ p {
     font-weight: 500;
   }
 
-
-
   .about-ajust {
     display: flex;
     justify-content: space-around;
 
+  }
+
+  /* #inicio #logo {
+    height: 41.6em;
+
+  } */
+
+  #banner img {
+
+    /* width: 100%; */
+    /* faz a imagem esticar para ocupar todo o contêiner */
+    /* height: auto; */
+    /* transfo;rm: scale(2.0); */
+    /* margin-top: 11em; */
+    /* Ajuste o fator de ampliação conforme necessário */
+    /* transition: transform 0.5s ease; */
   }
 
 }
