@@ -10,6 +10,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { ScreenServiceComponent } from './components/screen-service/screen-service.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { WhatPeopleSayComponent } from './components/what-people-say/what-people-say.component';
+import { AboutComponent } from './components/about/about.component';
 // import { ButtonModule } from 'primeng/button';
 // import { CarouselModule } from 'primeng/carousel';
 
@@ -21,6 +22,7 @@ import { WhatPeopleSayComponent } from './components/what-people-say/what-people
     ScreenServiceComponent,
     FooterComponent,
     WhatPeopleSayComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
