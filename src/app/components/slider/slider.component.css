@@ -5,12 +5,12 @@ html body {
   overflow-x: hidden;
   max-width: 100%;
 }
-
+/*
 h2 {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
-}
+} */
 
 h5 {
   font-size: 16px;
@@ -24,6 +24,7 @@ h5 {
 .align-buttons {
   display: flex;
   justify-content: center;
+  padding: 4px;
 }
 
 #inicio {
@@ -36,7 +37,16 @@ h5 {
 
   width: 100%;
   height: auto;
+  max-width: 100%;
+  /* Garante que a largura não ultrapasse 100% da tela */
+  overflow: hidden;
+  /* Evita o estouro do conteúdo fora do container */
 }
+
+#banner-mobile img {
+  display: none;
+}
+
 
 #logo {
   position: absolute;
@@ -46,15 +56,16 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8em 0em 0em 0em;
+  margin: 10em 0em 0em 0em;
+  /* padding-top: 5em; */
 }
 
-#logo h2 {
+/* #logo h2 {
   color: var(--light);
   font-size: xx-large;
   margin-top: -2em;
 
-}
+} */
 
 #logo h1 {
   margin-bottom: -1em;
@@ -64,18 +75,21 @@ h5 {
 #logo-escudo {
   display: flex;
   justify-content: center;
-  margin: 1em 0em 7em;
+  align-items: center;
+  margin: 1em 0em 2em;
 }
 
 
-@media (max-width : 500px) {
+/* tamanho de celular */
+@media (max-width : 620px) {
 
   /* tamanho de smartphones */
 
   #inicio {
     position: relative;
     width: 100%;
-    padding: 11em 0px 10em;
+    padding: 12em 0px 0em;
+
   }
 
   #inicio #logo {
@@ -87,15 +101,29 @@ h5 {
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.692); */
     display: block;
-    padding-top: 3em;
+    padding-top: 4.5em;
+  }
 
+  #banner {
+    width: 100%;
+    overflow: hidden;
+    /* Esconde as partes da imagem que vazam */
+    position: relative;
+    margin-top: -4em;
+    /* Necessário para posicionamento */
   }
 
   #banner img {
+    display: none;
+  }
 
+  #banner-mobile img {
     width: 100%;
     height: auto;
-    transform: scale(2.0);
+    transform-origin: center center;
+    /* Centraliza o zoom */
+    display: block;
+    transition: transform 0.3s ease;
   }
 
   .title-card2 {
@@ -110,11 +138,15 @@ h5 {
   #logo-escudo {
     display: flex;
     justify-content: center;
-    margin-bottom: 7em;
+    margin-bottom: 4.5em;
   }
 
   #logo h1 {
     margin-bottom: -1em;
+  }
+
+  .ajust-mobile-banner {
+    margin-top: -1em;
   }
 
 
@@ -129,6 +161,10 @@ h5 {
 /* Custom, iPhone Retina */
 @media (max-width : 768px) {
 
+  #logo {
+    padding-top: -10em;
+    margin: 6em 0em 0em 0em;
+  }
 
   .align-h1 h1 {
     font-size: 29px;
@@ -147,4 +183,17 @@ h5 {
   }
 
 
+}
+
+
+@media (min-width: 920px) {
+  #logo {
+    padding-top: 2em;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1200px) {
+  #logo {
+    padding-top: 8em;
+  }
 }
