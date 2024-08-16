@@ -7,14 +7,16 @@
 
     <div class="navbar-brand" style="display: flex">
       <div>
-        <img
-          class="container-fluid"
-          src="assets/logo-name-edited.png"
-          alt="error"
-          style="width: 10em"
-        />
+        <a href="#inicio">
+          <img
+            class="container-fluid"
+            src="assets/logo-name-edited.png"
+            alt="error"
+            style="width: 10em"
+          />
+        </a>
+
       </div>
-      <!-- <a href="#"></a> -->
     </div>
 
     <div id="fake">
@@ -22,7 +24,7 @@
     </div>
   </div>
 
-  <div style="display: flex; justify-content: flex-start;">
+  <div class="hide-menu" style="display: flex; justify-content: flex-start;">
     <ul class="navbar-nav me-auto mb-lg-0">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#inicio"
@@ -30,11 +32,14 @@
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+        <a class="nav-link active" aria-current="page" href="#servicos">Serviços</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#servicos"
-          >Serviços</a
+        <a class="nav-link active" aria-current="page" href="#who-iam">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#what-people-say"
+          >Clientes</a
         >
       </li>
       <li class="nav-item">
@@ -77,7 +82,16 @@
             (click)="menu()"
             class="nav-link active"
             aria-current="page"
-            href="#sobre"
+            href="#servicos"
+            >Serviços</a
+          >
+        </li>
+        <li class="side-item">
+          <a
+            (click)="menu()"
+            class="nav-link active"
+            aria-current="page"
+            href="#who-iam"
             >Sobre</a
           >
         </li>
@@ -86,8 +100,8 @@
             (click)="menu()"
             class="nav-link active"
             aria-current="page"
-            href="#servicos"
-            >Serviços</a
+            href="#what-people-say"
+            >Clientes</a
           >
         </li>
         <li class="side-item">

@@ -15,15 +15,15 @@
 
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 
 html body {
   overflow-x: hidden;
   max-width: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%);
-  /* background: black; */
-  font-family: 'Century Gothic', sans-serif;
+  /* background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%); */
+  /* background: var(--secondary); */
+  background: var(--secondary);
 }
 
 :root {
@@ -72,8 +72,9 @@ html body {
 
 
 h1 {
-  /* font-family: "Josefin Sans", serif; */
-  font-family: 'Century Gothic', sans-serif;
+  /* font-family: 'Century Gothic', sans-serif; */
+  font-family: 'Gothic A1', sans-serif;
+
 
   font-size: 40px;
   line-height: 1.0em;
@@ -85,24 +86,41 @@ h1 {
   pointer-events: none;
   cursor: default;
 
-  padding-bottom: 1.5em;
+  padding-bottom: 2em;
   display: flex;
   justify-content: center;
-}
-
-/* p {
-
-  color: var(--medium);
-  font-size: medium;
-  font-weight: 600;
 
   pointer-events: none;
   cursor: default;
   text-decoration: none;
-  } */
+}
+
+h2 {
+  font-weight: normal;
+
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+
+  /* color: var(--light); */
+  color: var(--light);
+  font-size: xx-large;
+  margin-top: -2em;
+}
+
+h5{
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+
+  /* color: var(--light); */
+  color: var(--light);
+  font-weight: normal;
+
+}
 
 p {
-  font-family: 'Century Gothic', sans-serif;
+  /* font-family: 'Century Gothic', sans-serif; */
   color: var(--light);
   letter-spacing: 0.5px;
   /* Espaçamento de 2 pixels entre as letras */
@@ -112,6 +130,41 @@ p {
   margin-bottom: 1em;
   font-size: small;
   font-weight: 500;
+}
+
+.btn-transparente {
+  background-color: transparent; /* Torna o fundo transparente */
+  border: 2px solid var(--primary); /* Define a cor e a espessura da borda */
+  color: white; /* Define a cor do texto */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  font-size: 16px; /* Define o tamanho do texto */
+  border-radius: 5px; /* Arredonda os cantos da borda (opcional) */
+  cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para efeitos */
+  text-decoration: none;
+}
+
+.btn-transparente:hover {
+  background-color: var(--primary); /* Preenche o fundo ao passar o mouse */
+  color: #fff; /* Muda a cor do texto para branco ao passar o mouse */
+}
+
+.btn-transparente2 {
+  background-color: var(--primary); /* Torna o fundo transparente */
+  border: 2px solid var(--primary); /* Define a cor e a espessura da borda */
+  color: #ffffff; /* Define a cor do texto */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  font-size: 16px; /* Define o tamanho do texto */
+  border-radius: 5px; /* Arredonda os cantos da borda (opcional) */
+  cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para efeitos */
+  text-decoration: none;
+
+}
+
+.btn-transparente2:hover {
+  background-color: transparent; /* Preenche o fundo ao passar o mouse */
+  color: #fff; /* Muda a cor do texto para branco ao passar o mouse */
 }
 
 

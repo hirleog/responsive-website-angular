@@ -1,13 +1,14 @@
 .square-hero-services {
   width: 100%;
   height: auto;
-  padding-bottom: 4em;
-  background: rgb(0, 0, 0);
-  background: var(--secondary-transparent);
+  padding-bottom: 2em;
+  /* background: rgb(0, 0, 0);
+  background: var(--secondary-transparent); */
 
   /* display: flex;
   justify-content: center; */
 }
+
 .sub-title {
   color: var(--primary);
   line-height: 100%;
@@ -19,8 +20,10 @@
 
 .service-list {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: column; /* Alinha os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100%; /* Ocupa a altura total disponível */
 }
 
 /* .service-list p {
@@ -39,8 +42,26 @@
   color: var(--primary-dark);
 } */
 
-p {
+/* p {
   font-size: 13px;
   color: var(--light);
+} */
+
+.point {
+  font-size: 2em;
+  width: 1em;
+  margin: -15px 0px 0px 0px;
+  color: var(--primary);
 }
 
+
+@media (max-width : 768px) {
+  .service-list {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Centraliza horizontalmente */
+    height: 100%; /* Ocupa a altura total disponível */
+  }
+
+}

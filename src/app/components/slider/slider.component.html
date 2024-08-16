@@ -1,201 +1,72 @@
 <!-- navbar -->
 <div id="menu">
-    <ng-container>
-        <app-nav></app-nav>
-    </ng-container>
+  <ng-container>
+    <app-nav></app-nav>
+  </ng-container>
 </div>
-<section id="inicio">
+<section id="inicio" data-aos="fade-down" data-aos-duration="1500">
+  <div id="banner" class="ajust-mobile-banner">
+    <img src="assets/banner.svg" alt="" />
+  </div>
+  <div id="banner-mobile" class="ajust-mobile-banner">
+    <img src="assets/banner-mobile-v2.png" alt="" />
+  </div>
 
-    <div id="banner">
-        <img src="assets/banner.svg" alt="">
-    </div>
+  <div id="logo" data-aos="fade-down" data-aos-duration="1000">
+    <div class="logo-main">
+      <h1 align="center">Advocacia Especialista</h1>
+      <h2 align="center" style="margin-bottom: -5px">Direito do Trabalho</h2>
 
-    <div id="logo">
-        <div class="logo-main">
-            <h1 align="center">Advocacia Especialista em</h1>
-            <h2 align="center" class="copy pt-3" style="line-height: 100%; margin-bottom: -5px;">
-                Direito do Trabalho
-            </h2>
+      <div id="logo-escudo">
+        <img style="width: 3em" src="assets/logo-edited.png" alt="" />
+      </div>
 
-            <div id="logo-escudo">
-                <img style="width: 4em;" src="assets/logo-edited.png" alt="">
-            </div>
+      <div class="d-flex justify-content-center">
+        <div class="align-buttons bloco sobre">
+          <a href="#servicos" class="btn-transparente2">Serviços</a>
         </div>
+        <div class="align-buttons bloco sobre">
+          <a href="#contato" class="btn-transparente">Contato</a>
+        </div>
+
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- ==== SOBRE ==== -->
-<!-- <section id="sobre">
-    <div class="container fluid">
-        <div class="sobre-content row container">
-
-            <div data-aos="fade-down" data-aos-duration="1500">
-                <div id="logo">
-                    <div>
-                        <h1 align="center">
-                            Você conhece todos os seus direitos?
-                        </h1>
-                        <h2 class="copy" align="center">
-                            O nosso objetivo é garantir a integridade de todos os seus direitos.
-
-                        </h2>
-
-
-                        <div id="logo-escudo">
-                            <img style="width: 3em;" src="assets/logo-rick-escudo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-down" data-aos-duration="1500" style="padding-bottom: 4em;">
-
-                    <div class="service-list">
-                        <div>
-                            <p>Acidente de Trabalho</p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>Adicional de Insalubridade e Periculosidade
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Adicional Noturno
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Assédio Moral e Sexual
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Cálculos Trabalhistas
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Danos Morais
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                FGTS e Multa
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Férias, Décimo-Terceiro Salário e Aviso Prévio
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Horas Extras
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Licença Maternidade e Paternidade
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Pedido de Rescisão Indireta
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Reconhecimento de Vínculo Empregatício
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Reversão de Justa Causa
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Seguro Desemprego
-
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div>
-                            <p>
-                                Trabalho sem Registro
-
-
-                            </p>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="align-buttons bloco">
-                    <a routerlink="#" class="button btn button-primay btn-primary button d-md-inline-block d-block mb-md-0 mb-2">Saiba mais</a>
-                </div>
-            </div>
-        </div>
+<!-- ==== servicos ==== -->
+<section id="servicos">
+  <ng-container>
+    <div>
+      <div>
+        <app-about></app-about>
+      </div>
     </div>
-</section> -->
-
-<!-- ==== SOBRE ==== -->
-<section id="about">
-    <ng-container>
-        <div>
-            <div>
-                <app-about></app-about>
-            </div>
-        </div>
-    </ng-container>
+  </ng-container>
 </section>
 <!-- ==== SERVIÇOS ==== -->
 <section id="servicos">
-    <ng-container>
-        <div>
-            <div>
-                <app-screen-service></app-screen-service>
-            </div>
-        </div>
-    </ng-container>
+  <ng-container>
+    <div>
+      <div>
+        <app-screen-service></app-screen-service>
+      </div>
+    </div>
+  </ng-container>
 </section>
 
 <!-- ==== O QUE ESTÃO DIZENDO ==== -->
-<section id="comentary pt-md-2" style="margin-top: 10px;">
-    <ng-container>
-        <div>
-            <app-what-people-say></app-what-people-say>
-        </div>
-    </ng-container>
+<section id="comentary pt-md-2" style="margin-top: 10px">
+  <ng-container>
+    <div>
+      <app-what-people-say></app-what-people-say>
+    </div>
+  </ng-container>
 </section>
 
 <!-- ==== FOOTER ==== -->
 <div class="footer">
-    <ng-container>
-        <app-footer></app-footer>
-    </ng-container>
+  <ng-container>
+    <app-footer></app-footer>
+  </ng-container>
 </div>
