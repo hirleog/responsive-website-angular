@@ -36,22 +36,15 @@
   flex-direction: row-reverse;
 }
 
-/* .service-list i {
-  font-size: 25px;
-  margin-right: 15px;
-  color: var(--primary-dark);
-} */
-
-/* p {
-  font-size: 13px;
-  color: var(--light);
-} */
-
 .point {
   font-size: 2em;
   width: 1em;
   margin: -15px 0px 0px 0px;
   color: var(--primary);
+}
+
+i {
+  margin-top: -10px;
 }
 
 
