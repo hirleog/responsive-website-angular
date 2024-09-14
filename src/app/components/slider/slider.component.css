@@ -76,7 +76,7 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8em 0em 0em 0em;
+  margin: 30em 0em 0em 0em;
   /* padding-top: 5em; */
 }
 
@@ -101,35 +101,18 @@ html body {
 
 
 /* tamanho de celular */
-@media (max-width : 620px) {
-
-  /* tamanho de smartphones */
-
-  /* #inicio {
-    position: relative;
-    width: 100%;
-    padding: 12em 0px 0em;
-
-  } */
-
-  /* #inicio #logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    left: 0;
-    height: -webkit-fill-available;
-    width: 100%;
-    display: block;
-    padding-top: 4.5em;
-  } */
-
-
+@media (max-width : 998px) {
   #banner {
+    height: 55vh;
     width: 100%;
     /* Esconde as partes da imagem que vazam */
     position: relative;
     margin-top: -4em;
     /* Necessário para posicionamento */
+  }
+
+  #logo {
+    margin-top: 11em;
   }
 
   #banner img {
@@ -180,14 +163,7 @@ html body {
 /* Custom, iPhone Retina */
 @media (max-width : 768px) {
 
-  #banner {
-    height: 50vh;
-  }
 
-  #logo {
-    padding-top: -10em;
-    margin: 9em 0em 0em 0em;
-  }
 
   .align-h1 h1 {
     font-size: 29px;
