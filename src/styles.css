@@ -17,25 +17,39 @@
 @import "primeng/resources/primeng.css";
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
 
-html body {
-  overflow-x: hidden;
+body {
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  overflow: hidden;
+  /* overflow: hidden; */
+  /* Permite rolar */
   max-width: 100%;
   /* background: linear-gradient(60deg, rgba(0, 0, 0, 1) 2%, rgba(87, 69, 252, 1) 100%); */
   /* background: var(--secondary); */
   background: var(--secondary);
 }
 
-:root {
-  /* --main-color: linear-gradient(183deg, rgba(0, 0, 0, 1) 0%, rgba(48, 38, 139, 1) 100%); */
-  /* --main-color-variation: linear-gradient(29deg, rgba(0, 0, 0, 1) 0%, rgba(48, 38, 139, 1) 63%); */
+body::-webkit-scrollbar {
+  width: 0;
+  /* Oculta a barra de rolagem no WebKit (Chrome, Safari) */
+  height: 0;
+}
 
-  /* --primary: #b79c64; */
+body {
+  -ms-overflow-style: none;
+  /* Oculta a barra de rolagem no IE e Edge */
+  scrollbar-width: none;
+  /* Oculta a barra de rolagem no Firefox */
+}
+
+:root {
   --primary: #ccad5d;
-  /* --primary-dark: #bd9952; */
   --primary-dark: #a58a46;
-  /* --primary: #b79c64;
-  --primary-dark: #bd9952; */
 
   --secondary: #0f0f0f;
   --secondary-transparent: #00000079;

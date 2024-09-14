@@ -1,6 +1,5 @@
 /* INCIO DO NAVBAR */
 html body {
-  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -24,16 +23,28 @@ html body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background: #000;
-  background: var(--secondary);
-  opacity: 95%;
 
   position: fixed;
-  /* top: 0;
-  left: 0;
-  bottom: 0; */
   z-index: 10;
+
+  background-color: #00000013;
+  /* Cor azul com transparência */
+  backdrop-filter: blur(10px);
+  /* Aplica desfoque de fundo */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Linha sutil no fundo */
+  transition: background-color 0.3s ease-in-out;
+  /* Efeito suave ao rolar */
 }
+
+.navbar-expand-lg.scrolled {
+  background-color: #0000008f;
+  /* Aumenta a opacidade ao rolar a página */
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
 
 /* FIM DO NAVBAR */
 
@@ -61,14 +72,10 @@ html body {
   margin: 15px 10px 0px 0px;
 }
 
-/* .side-bar {
-
-  display: none;
-} */
-
 #burger i {
   display: none;
 }
+
 
 
 
@@ -86,16 +93,19 @@ html body {
     z-index: 10;
     margin-top: 113px;
   }
+
   #ajustes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px 10px 0px 10px;
   }
+
   #burger i {
     display: block;
     cursor: pointer;
   }
+
   .nav-item a {
     display: flex;
     justify-content: center;

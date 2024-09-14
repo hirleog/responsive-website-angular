@@ -2,8 +2,38 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
 
 html body {
-  overflow-x: hidden;
   max-width: 100%;
+}
+
+/* Garantir que o vídeo ocupe toda a área da seção */
+#banner {
+  position: relative;
+  height: 100vh;
+}
+
+#banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Garante que o vídeo cubra toda a área, sem distorção */
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  /* Coloca o vídeo atrás da camada de conteúdo */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adiciona uma camada preta com transparência */
+  z-index: -1;
+  /* Fica entre o vídeo e o conteúdo */
 }
 
 .informativo h4 {
@@ -23,14 +53,14 @@ html body {
   padding-top: 2em;
 }
 
+
+
 #banner img {
 
   width: 100%;
   height: auto;
   max-width: 100%;
   /* Garante que a largura não ultrapasse 100% da tela */
-  overflow: hidden;
-  /* Evita o estouro do conteúdo fora do container */
 }
 
 #banner-mobile img {
@@ -96,7 +126,6 @@ html body {
 
   #banner {
     width: 100%;
-    overflow: hidden;
     /* Esconde as partes da imagem que vazam */
     position: relative;
     margin-top: -4em;
@@ -151,6 +180,10 @@ html body {
 /* Custom, iPhone Retina */
 @media (max-width : 768px) {
 
+  #banner {
+    height: 50vh;
+  }
+
   #logo {
     padding-top: -10em;
     margin: 9em 0em 0em 0em;
@@ -184,26 +217,9 @@ html body {
 
   }
 
-  /* #inicio #logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    left: 0;
-    height: -webkit-fill-available;
-    width: 100%;
-    display: block;
-    padding-top: 0em;
-  } */
-
-
   .title-card2 {
     margin: 2em 0px 0px 10px;
   }
-/*
-  #logo {
-    display: flex;
-    justify-content: center;
-  } */
 
   #logo-escudo {
     display: flex;

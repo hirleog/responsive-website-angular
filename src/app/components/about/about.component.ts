@@ -18,10 +18,12 @@ export class AboutComponent implements OnInit {
 //             com um profissional que coloca seus interesses em primeiro lugar e busca
 //             sempre os melhores resultados para o seu caso.
 
-expanded: boolean = false;   // Controla se o texto está expandido ou não
+expanded: boolean = true;   // Controla se o texto está expandido ou não
 constructor() { }
 
 ngOnInit(): void {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
 }
 toggleExpand() {
   this.expanded = !this.expanded;
