@@ -38,13 +38,14 @@ html body {
 }
 
 .navbar-expand-lg.scrolled {
-  background-color: #0000008f;
-  /* Aumenta a opacidade ao rolar a página */
+  background-color: #00000013;
   transition: background-color 0.3s ease-in-out;
 }
 
 
-
+.navbar-collapse {
+  flex-grow: 0!important;
+}
 
 /* FIM DO NAVBAR */
 
@@ -160,8 +161,8 @@ html body {
     width: 100%;
     /* display: flex; */
     /* justify-content: space-around; */
-    background: #000;
-    background: var(--secondary);
+    /* background: #000;
+    background: var(--secondary); */
     opacity: 95%;
 
     position: fixed;

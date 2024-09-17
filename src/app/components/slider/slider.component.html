@@ -4,26 +4,75 @@
     <app-nav></app-nav>
   </ng-container>
 </div>
-<section id="inicio" data-aos="fade-down" data-aos-duration="1500">
-  <div id="banner" class="ajust-mobile-banner">
-    <!-- <img src="assets/banner.webp" alt="" /> -->
-
-    <!-- <video autoplay muted loop>
-      <source src="assets/banner.mp4" type="video/mp4">
-    </video> -->
-
-    <video autoplay muted loop >
-      <source src="assets/banner.mp4" type="video/mp4">
-    </video>
-    <div class="overlay"></div>
-
+<section id="inicio">
+  <!-- <div id="banner" class="ajust-mobile-banner">
+    <img src="assets/banner.webp" alt="" />
   </div>
-  <!-- <img src="assets/banner-mobile-v2.webp" alt="" /> -->
-  <div id="banner-mobile" class="ajust-mobile-banner container-fluid">
+  <div id="banner-mobile" class="ajust-mobile-banner">
+    <img src="assets/banner-mobile-v2.webp" alt="" />
+  </div> -->
+  <div>
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      class="video-background"
+    >
+      <video
+        *ngIf="isVideoPlaying"
+        #bannerVideo
+        autoplay
+        loop
+        muted
+        plays-inline
+      ></video>
+      <video autoplay loop muted playsinline>
+        <source src="assets/banner-video.MP4" type="video/mp4" />
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
+      <img
+        *ngIf="!isVideoPlaying"
+        src="mobile-alternative.jpg"
+        alt="Banner Fallback"
+      />
 
+      <div
+        class="content container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <h1 data-aos="fade-right" data-aos-duration="1500">
+          <span class="highlight">Advocacia </span> Especializada<br />
+          Em direito do <span class="highlight">trabalho</span>
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="pb-3"
+          style="font-size: larger"
+        >
+          Consultoria e defesa eficaz em questões trabalhistas. Seu parceiro
+          para garantir justiça no ambiente de trabalho.
+        </p>
+        <!-- <button type="button" class="btn btn-primary btn-lg ui-button mr-5">
+          Large button
+        </button> -->
+
+        <div id="hero-btn">
+          <div class="align-buttons bloco sobre">
+            <a href="#servicos" class="btn-transparente2 btn btn-lg"
+              >Serviços</a
+            >
+          </div>
+          <div class="align-buttons bloco sobre">
+            <a href="#contato" class="btn-transparente btn btn-lg">Contato</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div id="logo" data-aos="fade-down" data-aos-duration="1000">
+  <!-- <div id="logo" data-aos="fade-down" data-aos-duration="1000">
     <div class="logo-main">
       <h1 align="center">Advocacia Especializada</h1>
       <h2 align="center" style="margin-bottom: -5px">Direito do Trabalho</h2>
@@ -51,7 +100,7 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <!-- ==== servicos ==== -->

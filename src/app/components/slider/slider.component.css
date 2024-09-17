@@ -2,43 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto");
 
 html body {
+  overflow-x: hidden;
   max-width: 100%;
-}
-
-/* Garantir que o vídeo ocupe toda a área da seção */
-#banner {
-  position: relative;
-  height: 100vh;
-}
-
-#banner video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Garante que o vídeo cubra toda a área, sem distorção */
-  transform: translate(-50%, -50%);
-  z-index: -2;
-  /* Coloca o vídeo atrás da camada de conteúdo */
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  /* Adiciona uma camada preta com transparência */
-  z-index: -1;
-  /* Fica entre o vídeo e o conteúdo */
-}
-
-.informativo h4 {
-  color: var(--primary);
-  font-family: 'Gothic A1', sans-serif;
 }
 
 .align-buttons {
@@ -53,167 +18,81 @@ html body {
   padding-top: 2em;
 }
 
-
-
-#banner img {
-
+.video-background video {
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  max-width: 100%;
-  /* Garante que a largura não ultrapasse 100% da tela */
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
 }
 
-#banner-mobile img {
-  display: none;
+.video-background img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
 }
 
+.video-background {
+  position: sticky;
+  width: 100%;
+  height: 96vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
-#logo {
+.video-background::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  color: wheat;
+  text-align: center;
+}
+
+.content h1,
+p {
+  text-align: left;
+  padding-bottom: 0em !important;
+}
+
+#hero-btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30em 0em 0em 0em;
-  /* padding-top: 5em; */
+  justify-content: left;
 }
 
-/* #logo h2 {
-  color: var(--light);
-  font-size: xx-large;
-  margin-top: -2em;
-
-} */
-
-#logo h1 {
-  margin-bottom: -1em;
-
-}
-
-#logo-escudo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1em 0em 2em;
-}
-
-
-/* tamanho de celular */
-@media (max-width : 998px) {
-  #banner {
-    height: 55vh;
-    width: 100%;
-    /* Esconde as partes da imagem que vazam */
-    position: relative;
-    margin-top: -4em;
-    /* Necessário para posicionamento */
-  }
-
-  #logo {
-    margin-top: 11em;
-  }
-
-  #banner img {
-    display: none;
-  }
-
+@media (max-width : 620px) {
   #banner-mobile img {
     width: 100%;
     height: auto;
     transform-origin: center center;
-    /* Centraliza o zoom */
     display: block;
     transition: transform 0.3s ease;
   }
 
-  .title-card2 {
-    margin: 2em 0px 0px 10px;
-  }
-
-  /* #logo {
-    display: flex;
-    justify-content: center;
-  } */
-
-  #logo-escudo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2.5em;
-  }
-
-  #logo h1 {
-    margin-bottom: -1em;
-  }
-
-  .ajust-mobile-banner {
-    margin-top: -1em;
-  }
-
-
-}
-
-
-
-
-/* ============= [FIM] É MEDIA PRINCIPAL QUE REPRESENTA A MAIOR TELA =================== */
-
-
-/* Custom, iPhone Retina */
-@media (max-width : 768px) {
-
-
-
-  .align-h1 h1 {
-    font-size: 29px;
-  }
-
-
-  .align-buttons {
-    display: flex;
-    justify-content: center;
-  }
-
-  .title-card {
-    color: var(--primary);
-    line-height: 100%;
-    font-size: 44px;
-  }
-
-
-}
-
-
-@media (max-width: 920px) {
-  #inicio {
-    position: relative;
-    width: 100%;
-    padding: 6em 0px 0em;
-
-  }
-
-  .title-card2 {
-    margin: 2em 0px 0px 10px;
-  }
-
-  #logo-escudo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2.5em;
-  }
-
-  #logo h1 {
-    margin-bottom: -1em;
-  }
-
   .ajust-mobile-banner {
     margin-top: -1em;
   }
 }
 
-@media (min-width: 1200px) {
-  #logo {
-    padding-top: 8em;
+@media (min-width: 1000px) {
+  .pb-3 {
+    font-size: 24px;
+    width: 48%;
+    font-weight: normal;
   }
 }

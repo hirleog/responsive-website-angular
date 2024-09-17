@@ -39,7 +39,7 @@
 .detail{
   display:flex;
   justify-content: center;
-  margin: 1em 0px -0.5em;
+  margin: 1em 0px 2.5em;
  }
 
 .card-title {

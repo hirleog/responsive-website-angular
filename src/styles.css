@@ -90,23 +90,33 @@ h1 {
   font-family: 'Gothic A1', sans-serif;
 
 
-  font-size: 40px;
+  font-size: 59px;
   line-height: 1.0em;
   letter-spacing: 0.10px;
   text-transform: uppercase;
 
-  color: var(--primary);
-  margin: 2em 0px 0px 10px;
+  color: var(--light);
+  margin: 0em 0px 5px 0px;
   pointer-events: none;
   cursor: default;
 
   padding-bottom: 2em;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 
   pointer-events: none;
   cursor: default;
   text-decoration: none;
+  text-transform: lowercase;
+  text-align: left;
+}
+
+h1::first-letter {
+  text-transform: uppercase;
+  /* Transforma apenas a primeira letra em maiúscula */
+}
+.highlight {
+  color: var(--primary);
 }
 
 h2 {
@@ -120,6 +130,7 @@ h2 {
   color: var(--light);
   font-size: xx-large;
   margin-top: -2.5em;
+  text-align: left;
 }
 
 h5 {
@@ -213,15 +224,15 @@ p {
 
 @media (max-width : 500px) {
   h1 {
-    font-size: 35px;
+    font-size: 48px;
   }
 
-  h2 {
+  /* h2 {
     color: var(--light);
     font-size: x-large;
     margin-top: -2em;
 
-  }
+  } */
 }
 
 
